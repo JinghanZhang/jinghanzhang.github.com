@@ -1,0 +1,89 @@
+#mySketch {
+  width: 800px;
+  height: 250px;
+  background-color: #F7A072;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body{
+  background-color: #D9E5D6;
+}
+
+.pagecontainer {
+  align-items: center;
+  max-width: 1200px;
+  min-width: 800px;
+  margin: auto;
+}
+
+header h1, header h2 {
+  color: #0FA3B1;
+  margin-left: 17%;
+  text-shadow: 3px 3px #F4D03F;
+  font-family: 'Permanent Marker', cursive;
+}
+
+h2 {
+  color: #0FA3B1;
+  text-shadow: 0 0 5px white;
+  font-family: 'Permanent Marker', cursive;
+}
+
+li, li a {
+  color: #0FA3B1;
+  text-shadow: 0 0 4px white;
+}
+
+#section1 {
+  vertical-align: top;
+  background-color: #EDDEA4;
+  box-shadow: 10px -5px #F4D03F;
+}
+
+#section2 {
+  vertical-align: top;
+  background-color: #F7A072;
+  box-shadow: 10px -5px #F4D03F;
+}
+
+#section3 {
+  vertical-align: top;
+  background-color: #FF9B42;
+  box-shadow: 10px -5px #F4D03F;
+}
+
+.section {
+  width: 215px;
+  height: 400px;
+  display: inline-block;
+  padding: 10px;
+  margin: 1em;
+}
+
+.list {
+  width: 800px;
+  margin: 0 auto;
+  height: 500px;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+}
+
+footer {
+  color: white;
+  padding: 1em;
+  background-color: #0FA3B1;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+}
