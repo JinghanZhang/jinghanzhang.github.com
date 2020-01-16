@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+      <title>HTML & CSS Challenge 1</title>
+      <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Comfortaa&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="stylesheet.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+
+   <body>
+      <header><h1>HTML and CSS Refresher Challenges</h1></header>
+      
+      <nav>
+        <ul>
+            <div id = "flex2"><li><a href="index.html">HTML Basics</a></li></div>
+            <div id = "flex2"><li><a href="cssbasics.html">CSS Basics</a></li></div>
+            <div id = "flex2"><li><a href="layout.html">Page Layout</a></li></div>
+            <div id = "flex2"><li><a href="responsive.html">Responsive Design</a></li></div>
+        </ul>
+      </nav>
+      
+      <main>
+        <article>
+
+            <h2>Inheritance in CSS</h2>
+
+            <p>When we try to apply certain CSS properties to an element, they will not only affect
+                 that specific element but also flow down the branch or branches beneath them. Therefore,
+                those lower elements are said to inherit from their ancestors, and sharing same properties.
+                For example, div tag and p tag are descendants of the body tag. When we assign properties to body,
+                div and p will also have same attributes. The border property is one typical example that is 
+                a non-inherited property.</p>
+
+        </article>
+
+        <article>
+
+            <h2>Specificity in CSS</h2>
+        
+            <p>The specificity law states that the more specific the selector, the stronger the rule, and the 
+                conflicting style in the stronger rule wins. Inline styles have highest specificity and elements
+                have lowest specificity. The browser will decide which CSS selector to use according to the level of
+                specificity. For example, "nav a" has higher specificity value then "a", so the browser will apply
+                properties assigned in "nav a". A compound selector can mix previous types using more than one class, 
+                ID or tag. A CSS selector can contain more than one simple selector and the combination of them become
+                a multiple selector.</p>
+
+        </article>
+
+        <article>
+
+            <h2>ID and Class Attributes</h2>
+
+            <p>The difference between ID and class attributes is that ID can only be used to identify one element, while 
+                class can be used to identify more then one element. The symbol for class selector is "." and the symbol 
+                for ID is "#".</p>
+
+        </article>
+
+       </main>
+
+    <footer>
+        <p>Page by Jinghan Zhang</p>
+        <p>HTML checked by Minhee Son</p>
+        <a href="http://validator.w3.org/check?uri=referer">Valid HTML</a>
+    </footer>
+
+   </body>
+</html>

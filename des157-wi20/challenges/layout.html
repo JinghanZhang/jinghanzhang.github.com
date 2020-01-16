@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+      <title>HTML & CSS Challenge 1</title>
+      <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Comfortaa&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="stylesheet.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+
+   <body>
+      <header><h1>HTML and CSS Refresher Challenges</h1></header>
+      
+      <nav>
+        <ul>
+            <div id = "flex2"><li><a href="index.html">HTML Basics</a></li></div>
+            <div id = "flex2"><li><a href="cssbasics.html">CSS Basics</a></li></div>
+            <div id = "flex2"><li><a href="layout.html">Page Layout</a></li></div>
+            <div id = "flex2"><li><a href="responsive.html">Responsive Design</a></li></div>
+        </ul>
+      </nav>
+      
+      <main>
+        <article>
+
+            <h2>Structure, Phrasing and Display</h2>
+
+            <p>In HTML, the default display value for most emelents is block or inline. Structual(block) elements will create larger structures than inline elements. By the default formatting,
+                block elements begin on new lines, but inline elements can start content anywhere in a line. A block element always
+                takes up the full width available on the browser. For inline element, it only takes up as much width as necessary, like
+                the "a" and "img" tag. If we want some contents that width 100% of the browser, we should apply block element and asign
+                CSS attribute.</p>
+
+        </article>
+
+        <article>
+
+            <h2>Box Model</h2>
+        
+            <p>All elements in HTML can be considered as boxes. Boxes control the design and layout of a webpage. The CSS box model is essentially
+                a box that wraps around all HTML elements. Its attributes include width, margins, borders, padding and so on. We can assign different values
+                to these attributes and change the overall layout and typography of the page. The box-sizing property sets the total width and height of an element.
+                By default in CSS box, the width and height we assigned to elements will be applied only to the element's content box. 
+                When we assign the width and height, we have to adjust the value for any border or padding.</p>
+
+                <img src="images/box.png" alt="Img" width = "600px" height = "400px">
+
+        </article>
+
+        <article class = "step7">
+
+            <h2>Background Images</h2>
+
+            <p>The "img" tag in HTML means the image is related to the content and is not just a design element. It should be display with the text. While the background-image in CSS means that 
+                this image is not part of the content, and it only works as a background. Also, the background-image will not be printed by default when printing and image with img tag in HTML will
+                be printed automatically with other content.</p>
+
+        </article>
+
+       </main>
+
+    <footer>
+        <p>Page by Jinghan Zhang</p>
+        <p>HTML checked by Minhee Son</p>
+        <a href="http://validator.w3.org/check?uri=referer">Valid HTML</a>
+    </footer>
+
+   </body>
+</html>

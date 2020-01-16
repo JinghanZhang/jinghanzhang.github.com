@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+      <title>HTML & CSS Challenge 1</title>
+      <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Comfortaa&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="stylesheet.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+
+   <body>
+      <header><h1>HTML and CSS Refresher Challenges</h1></header>
+      
+      <nav>
+        <ul>
+            <div id = "flex2"><li><a href="index.html">HTML Basics</a></li></div>
+            <div id = "flex2"><li><a href="cssbasics.html">CSS Basics</a></li></div>
+            <div id = "flex2"><li><a href="layout.html">Page Layout</a></li></div>
+            <div id = "flex2"><li><a href="responsive.html">Responsive Design</a></li></div>
+        </ul>
+      </nav>
+      
+      <main>
+        <div id = "flex">
+        <article id = "flex1">
+
+            <h2>About Media Queries</h2>
+
+            <p>Media queries are used to deliver a tailored style sheet to different screen size, like desktops, laptops and mobile phones.
+                It uses the @media rule to apply CSS properties to the website only if a certain condition is true. It is a useful technique for 
+                responsive design. The Min-Width means that an element will apply the properties on media queries when the screen size is greater than
+                the min-width. And the Max-width means less than or equal to the width specified in that media query. Starting with small screen setting
+                will save much time because the basic layout will also apply to most larger screen. If we start from large screen, some layout will not
+                be accepted for small screen and we may need more code to adjust the typography.</p>
+
+        </article>
+
+        <article id = "flex1">
+
+            <h2>Relative Units</h2>
+        
+            <p>Relative length units are relative to other elements of the page, perhaps the size of the parent element's font, or the size of the viewport. 
+                The benefit of using relative units is that with some careful planning you can use it so the size of text or other elements scale 
+                relative to everything else on the page. There are some most useful units like em, percentage vw, and vh.
+            "em" relative to the font size of the parent element. "vw" and "vh" relative to 1% of the viewport's width or height. Percentage is similar to length
+            and it is always set relative to some other value like "width: 40%".</p>
+
+        </article>
+
+        <article id = "flex1">
+
+            <h2>Meta Viewport Tag</h2>
+
+            <p>Basically, the meta viewport tag offer a number of ways to control how the entire page property displays and behaves on a range of mobile devices. 
+                It can set the device width, height, the initial scale and many other properties. With this tag in my html file, my webpage will fit the width of
+                desive automatically. Without this tag, we may need to zoom the page in order to fit the width of device screen. 
+            </p>
+
+        </article>
+        </div>
+
+       </main>
+
+    <footer>
+        <p>Page by Jinghan Zhang</p>
+        <p>HTML checked by Minhee Son</p>
+        <a href="http://validator.w3.org/check?uri=referer">Valid HTML</a>
+    </footer>
+
+   </body>
+</html>

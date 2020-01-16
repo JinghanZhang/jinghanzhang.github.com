@@ -1,0 +1,115 @@
+
+main{
+    background-color:#EAEAEA;
+    padding: 2em;
+    
+}
+
+h1, h2{
+    color: #00A9A9;
+    font-size: 2.6em;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: normal;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    font-size: 1.6em;
+}
+
+body{
+    font-family: 'Comfortaa', cursive;
+    font-weight: normal;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+footer{
+    text-align: center;
+}
+
+/*Challenge3*/
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li a{
+    color: #FFAE00;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+nav li a:hover {
+    color: white;
+    background-color: #B9CDCD;
+}
+
+/*Challenge4*/
+
+.step7{
+    background-image: url("images/img.jpg");
+    background-size: cover;
+}
+
+.step7 h2, .step7 p{
+    color: white;
+    background-color: rgba(1, 1, 1, 0.3);
+    padding: 15px;
+}
+
+header, footer{
+    padding:2em;
+    background-image: linear-gradient(#ffebc1, #c4feff);
+}
+
+/*Challenge5*/
+
+@media only screen and (min-width: 600px) {
+
+    #flex{
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #flex div{
+        flex: 1;
+    }
+
+    #flex1{
+        width: 30%;
+    }
+
+    nav ul{
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #flex2{
+        width: 25%;
+        border-right: 1px solid #FFAE00;
+    }
+
+    #flex2:last-of-type{
+        border-right: none;
+    }
+
+}
