@@ -3,18 +3,18 @@ body {
     background-color: #D8E9EB;
 }
 
-header{
-    padding: .1em;
-}
-
 h1{
     padding: 1%;
+    border-radius: 25px;
     text-align: center;
     font-size: 3em;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     font-family: 'Permanent Marker', cursive;
     color: #29D1E5;
-    background-color:pink;
-    text-shadow: 3px 3px #F4D03F;
+    background-color:#F4D03F;
+    text-shadow: 3px 3px white;
 }
 
 #topic{
@@ -22,12 +22,34 @@ h1{
     text-align: center;
     font-size: 4.5em;
     color: #FFC300;
-    text-shadow: 3px 3px #2E86C1;
+    text-shadow: 3px 3px #29D1E5;
     font-family: 'Permanent Marker', cursive;
 }
 
 a{
     text-decoration: none;
+}
+
+.button{
+    margin-left: 80%;
+    margin-bottom: 1%;
+    font-size: 24px;
+    text-align: center;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.content{
+    height: 800px;
+    margin-left: 8%;
+    margin-right: 8%;
+    background-color: rgba(172, 198, 196, 0.5);
+    border-radius: 50px;
 }
 
 #back{
@@ -37,6 +59,7 @@ a{
 }
 
 footer {
+    margin-top: 3%;
     color: white;
     padding: 1em;
     margin-bottom: 0;
@@ -45,6 +68,7 @@ footer {
   }
   
 footer a {
+    font-size: 18px;
     font-family: 'Caveat', cursive;
     color: white;
   }
