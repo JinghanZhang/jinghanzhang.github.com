@@ -1,0 +1,51 @@
+
+body {
+    background-color: #D8E9EB;
+}
+
+header{
+    padding: .1em;
+}
+
+h1{
+    padding: 1%;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Permanent Marker', cursive;
+    color: #29D1E5;
+    background-color:pink;
+    text-shadow: 3px 3px #F4D03F;
+}
+
+#topic{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 4.5em;
+    color: #FFC300;
+    text-shadow: 3px 3px #2E86C1;
+    font-family: 'Permanent Marker', cursive;
+}
+
+a{
+    text-decoration: none;
+}
+
+#back{
+    color: black;
+    margin: 0 auto;
+    font-family: 'Caveat', cursive;
+}
+
+footer {
+    color: white;
+    padding: 1em;
+    margin-bottom: 0;
+    background-color: #0FA3B1;
+    text-align: center;
+  }
+  
+footer a {
+    font-family: 'Caveat', cursive;
+    color: white;
+  }
+  
