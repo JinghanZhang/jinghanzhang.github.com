@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Function Experimentation</title>
+</head>
+<body>
+    <h1>JS Function Experimentation</h1>
+    <script>
+        var year = prompt('Enter a year', '2020');
+
+        function checkInput(year){
+            //continue if input is an integer
+            if(parseInt(year)){
+                checkSeason(season, year, randMonth());
+            }
+            else{
+                console.log("You did not enter an integer");
+            }
+        }
+
+        function randMonth(){
+            //generate random number from 1 - 12
+            var month =  Math.floor(12 * Math. random()) + 1;
+            console.log(`Month is ${month}`);
+            return month;
+        }
+
+        var season = ["Spring", "Summer", "Fall", "Winter"];
+        function checkSeason(season, year, month){
+            //check season according to random month
+            if(month >= 3 && month <= 5){
+                console.log(`${year}.${month} -->> ${season[0]}`);
+            }
+            else if(month >= 6 && month <= 8){
+                console.log(`${year}.${month} -->> ${season[1]}`);
+            }
+            else if(month >= 9 && month <= 11){
+                console.log(`${year}.${month} -->> ${season[2]}`);
+            }
+            else{
+                console.log(`${year}.${month} -->> ${season[3]}`);
+            }
+        }
+
+        function upperSeason(season){
+            //capitalize the array
+            for(var i = 0; i < season.length; i++){
+                season[i] = season[i].toUpperCase();
+                console.log(season[i]);
+            }
+        }
+
+        checkInput(year);
+        upperSeason(season);
+
+    </script>
+    
+</body>
+</html>
