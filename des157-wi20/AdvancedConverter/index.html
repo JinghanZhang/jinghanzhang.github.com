@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Distance Converter</title>
+
+	<!--/ /-------- Normalize CSS --------/ /-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	
+	<!--/ /-------- Google Fonts --------/ /-->
+	<link href="https://fonts.googleapis.com/css?family=Oswald|PT+Sans&display=swap" rel="stylesheet">
+	
+	<!--/ /-------- My Styles --------/ /-->
+	<link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<h1>Miles to Kilometers Converter</h1>
+    
+    <div class="container top">
+    	<p>Type in a number of miles and click the button to convert the distance to kilometers.</p>
+        
+        <form method="post" action="somephpfile.php" id="convert">
+        
+        	<input type="text" name="distance" id="distance" placeholder="distance">
+            <input type="submit" name="convertdist" value="Convert Distance">
+        
+        </form>
+    </div>
+    <div class="container bottom" id="answer">
+    	<h2 class="invisible">Answer goes here</h2>
+    </div>
+    
+    <p id="directions">Press the "K" key to switch to kilometer converstion, press the "M" key to switch to mile conversion</p>
+
+	<script>
+		var miles = document.querySelector("form");
+		miles.addEventListener('submit', function(convert){
+            
+            convert.preventDefault();
+            
+            var formMiles = document.querySelector('input').value;
+
+			if(parseInt(formMiles)){
+				mtok(formMiles);
+				document.addEventListener("keydown", function(event){
+					var key = String.fromCharCode(event.which);
+					//k = 75, m = 77
+					if(event.which == 75) { //switch to kilometer conversion
+						ktom(formMiles);
+					}
+					else if(event.which == 77){ //switch to mile conversion
+						mtok(formMiles);
+					}
+				});
+			}
+			else{
+				document.getElementsByClassName("invisible")[0].style.color = "#2980B9";
+                document.getElementsByClassName("invisible")[0].innerHTML = "Please enter a number.";
+			}
+
+        });
+
+		function mtok(mile){
+			var kilometer = mile * 1.609344;
+			var km3 = kilometer.toFixed(3);
+			document.getElementsByClassName("invisible")[0].style.color = "#2980B9";
+			document.getElementsByClassName("invisible")[0].innerHTML = `${mile} miles convert to ${km3} kilometers`;
+		}
+
+		function ktom(kilometer){
+			var miles = kilometer * 0.621371192;
+			var miles3 = miles.toFixed(3);
+			document.getElementsByClassName("invisible")[0].style.color = "#2980B9";
+			document.getElementsByClassName("invisible")[0].innerHTML = `${kilometer} kilometers convert to ${miles3} miles`;
+		}
+
+	</script>
+</body>
+</html>
