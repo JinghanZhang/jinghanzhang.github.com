@@ -1,0 +1,153 @@
+body{
+    background-color: #FCF1DF;
+}
+
+header h1{
+    font-size: 3.5em;
+    color: #D74E09;
+    text-align: center;
+    text-shadow: 3px 3px 3px #FFE209;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+header h2{
+    font-size: 1.9em;
+    color: #F2BB05;
+    text-align: center;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-top: .5%;
+    padding-bottom: .5%;
+    border-radius: 50px;
+    margin: 0 auto;
+    font-family: 'Josefin Slab', serif;
+}
+
+/*button*/
+
+.button{
+    font-family: 'Josefin Slab', serif;
+    margin-left: 75%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+    font-size: 18px;
+    text-align: center;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.button a{
+    text-decoration: none;
+    color: black;
+}
+
+/*content*/
+
+.web1, .web2{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+    border-radius: 50px;
+}
+
+.web1 p, .web2 p{
+    margin: 2em;
+    font-size: 20px;
+    font-family: 'Josefin Slab', serif;
+    padding-bottom: 1em;
+}
+
+.web1 img, .web2 img{
+    width: 40%;
+    height: 50%;
+    margin: 0.2em;
+}
+
+/*class1*/
+
+.web1{
+    background-color: rgba(255, 226, 16);;
+}
+
+.web1 .img1, .web1 .img2, .web1 .gif1{
+    justify-content: center;
+    display: flex;
+}
+
+.web1 h2{
+    padding-top: .5em;
+    padding-left: 2em;
+    color: blue;
+    font-size: 3em;
+    font-family: 'Luckiest Guy', cursive;
+    text-shadow: 3px 3px white;
+}
+
+.web1 p{
+    color: #6E0E0A;
+}
+
+/*class2*/
+
+.web2{
+    background-color: rgba(0, 103, 154);;
+}
+
+.web2 h2{
+    padding-top: .5em;
+    padding-left: 1.5em;
+    color: white;
+    font-size: 3em;
+    font-family: 'Luckiest Guy', cursive;
+    text-shadow: 3px 3px green;
+}
+
+.web2 .img3, .web2 .img4, .web2 .img5{
+    justify-content: center;
+    display: flex;
+}
+
+.web2 p{
+    color: white;
+}
+
+/*cite*/
+
+.cite{
+    color: #D74E09;
+    padding-top: 3%;
+    padding-bottom: .5%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Josefin Slab', serif;
+}
+
+.cite a{
+    color: black;
+}
+
+/*footer*/
+
+footer a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+}
+
+footer {
+    margin-top: 1em;
+    color: white;
+    padding: 1em;
+    background-color: #0FA3B1;
+    text-align: center;
+}
+  
+  footer a {
+    color: white;
+}
