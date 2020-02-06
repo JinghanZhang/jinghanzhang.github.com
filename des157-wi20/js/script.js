@@ -2,8 +2,7 @@ var barWidth = 10;
 var lastBar = -1;
 
 function setup() {
-  createCanvas(800, 250);
-  var myCanvas = createCanvas();
+  var myCanvas = createCanvas(800, 250);
   myCanvas.parent(mySketch);
   colorMode(RGB, width, height, 100); 
   noStroke();
@@ -18,3 +17,6 @@ function draw() {
     lastBar = bar;
   }
 }
+
+setup();
+draw();
