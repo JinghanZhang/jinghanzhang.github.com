@@ -1,3 +1,27 @@
+/*Animation*/
+.typewriter {
+    position: relative;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #fff, #fff, #fff);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 8s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+
+/*Style*/
 
 body{
     background-color: #f8cf19;
@@ -9,13 +33,15 @@ h1{
 }
 
 .title{
-    height: 200px;   
+    height: 150px;   
     width: 1000px;
     line-height: 400px;
     margin: 0 auto;
 }
 
-.box{
+#myform{
+    grid-row: 1;
+    grid-column: 2,3;
     text-align: center;
     margin-left: 50%;
     font-size: 2em;
@@ -26,9 +52,10 @@ h1{
     border: solid;
     padding: 1em;
     margin-right:5%;
+    margin-bottom: 10%;
 }
 
-.box input{
+#myform input{
     padding: 10px 24px;
 }
 
@@ -60,6 +87,31 @@ input[type="submit"]:hover {
     color: white;
     font-size: 3em;
 }
+
+.invisible { 
+    display: none;
+}
+
+#madlib{
+    border-radius: 50px;
+    border: solid white;
+    font-family: 'Annie Use Your Telescope', cursive;
+    color: white;
+    font-size: 2em;
+    padding: 15px;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 50%;
+    margin-bottom: 2%;
+}
+
+#myAnimation {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: white;
+  }
+
 
 
 

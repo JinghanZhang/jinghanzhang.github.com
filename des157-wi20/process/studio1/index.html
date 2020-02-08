@@ -18,23 +18,29 @@
         <h1 class="typewriter">Video Games</h1>
     </div>
 
-    <form class = "box">
-            I am <input type="text" name="age" id="userInput1"> years old.
-            <br>
-            My favorite video game is <input type="text" name="gamename" id="userInput2">.
-            <br>
-            It is a <input type="text" name="type" id="userInput3"> game.
-            <br>
-            I have played for <input type="text" name="year" id="userInput4"> years.
-            <br>
-            I really enjoy <input type="text" name="reason" id="userInput5">.
-            <br>
-            <input type = "submit" value = "Send the form!" onclick="showinput();">
-    </form>
+    <div class="invisible" id="madlib">
+        <p>  </p>
+    </div>
 
-    <p> input is <span id="display1"></span></p>
-    <p> <span id="display2"></span></p>
+    <form id="myform">
+   
+        I am <input type="text" placeholder="20" name="age" id="userInput1"> years old.
+        <br>
+        My favorite video game is <input type="text" placeholder="Overwatch" name="gamename" id="userInput2">.
+        <br>
+        It is a <input type="text" placeholder="first person shooter" name="type" id="userInput3"> game.
+        <br>
+        I have played for <input type="text" placeholder="3" name="year" id="userInput4"> years.
+        <br>
+        I really enjoy <input type="text" placeholder="the art style" name="reason" id="userInput5"> of the game.
+        <br>
+        <input type="submit" value="See Mad Lib!">
+
+    </form>
     
-    <script src="studio1script.js"></script>
+    <div id ="myAnimation"></div>
+
+    
+    <script src="script.js"></script>
 </body>
 </html>
