@@ -24,7 +24,7 @@ function makeMadLib(theWords){
 
     var madlib =
      `I am  ${theWords[0]} years old.
-     
+
      My favorite video game is ${theWords[1]}.
      It is a ${theWords[2]} game. 
      I have played for ${theWords[3]} years.
@@ -38,12 +38,12 @@ function makeMadLib(theWords){
     mlContainer.setAttribute("class", "visible");
 }
 
-function myMove() {
-    var elem = document.getElementById("myAnimation"); 
+function animation1() {
+    var elem = document.getElementById("Animation"); 
     var pos = 0;
     var id = setInterval(frame, 10);
     function frame() {
-      if (pos == 350) {
+      if (pos == 200) {
         clearInterval(id);
       } else {
         pos++; 
@@ -53,5 +53,5 @@ function myMove() {
     }
 }
 
-myMove();
+animation1();
 
