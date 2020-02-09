@@ -119,6 +119,25 @@ img{
     width: 30%;
 }
 
+.button{
+    font-family: 'Annie Use Your Telescope', cursive;
+    margin-left: 75%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+    font-size: 18px;
+    text-align: center;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 0;
+}
+
+.button a{
+    text-decoration: none;
+    color: black;
+}
+
 footer {
     font-family: 'Annie Use Your Telescope', cursive;
     color: #f8cf19;
@@ -126,11 +145,11 @@ footer {
     background-color: white;
     text-align: center;
     font-size: 1.3em;
-  }
+}
   
-  footer a {
+footer a {
     color: #f8cf19;
-  }
+}
 
 
 
