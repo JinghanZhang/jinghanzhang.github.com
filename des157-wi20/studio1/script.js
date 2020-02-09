@@ -38,6 +38,7 @@ function makeMadLib(theWords){
     mlContainer.setAttribute("class", "visible");
 }
 
+//animation for images
 function animation1() {
     var elem = document.getElementById("Animation"); 
     var pos = 0;
@@ -52,6 +53,5 @@ function animation1() {
       }
     }
 }
-
 animation1();
 
