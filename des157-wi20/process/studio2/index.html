@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Studio 2</title>
+      <link href="styles.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Modak&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <header>
+         <h1 > - Milk Tea - </h1>
+      </header>
+
+      <div class="popup" onclick="popupfunction()">My favorite flavor is ...
+         <span class="popuptext" id="myPopup">Thai bubble tea !!</span>
+      </div>
+
+      <div class="slideshow-container">
+         <div class = "mySlides fade">
+            <img src = "images/milktea1.png" style = "width:100%">
+         </div>
+         <div class = "mySlides fade">
+            <img src = "images/milktea2.png" style = "width:100%">
+         </div>
+         <div class = "mySlides fade">
+            <img src = "images/milktea3.png" style = "width:100%">
+         </div>
+         <div class = "mySlides fade">
+            <img src = "images/milktea4.png" style = "width:100%">
+         </div>
+      </div>
+
+      <div class = "question">
+         <p>Do you like milk tea?<img id = "noimg" src="images/noimg.png" alt="tree" style = "display: none;"></p>
+         <input type = "radio" name = "q" value = "yes" onclick="display_image();">Yes
+         <input type ="radio" name = "q" value = "no" onclick="display_image2();">No
+      </div>
+
+      <div class="yes">
+         <img id = "recipe" src="images/recipe.png" width="300" height="300" alt="tree" style = "display: none;" >
+         <div class="content">
+            <div class="text" >You find the recipe!</div>
+         </div>
+      </div>
+
+      <div class = "button">
+         <a id = "back" href="https://jinghanzhang.github.io/des157-wi20/"> &#8592;Back to Portal Pages</a>
+      </div>
+
+      <footer>
+         <p><a href="mailto:&#106;&#104;&#122;&#122;&#104;&#097;&#110;&#103;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">Email</a>
+            / <a href="https://validator.w3.org/check?uri=referer">Valid HTML</a> / <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+         </p>
+      </footer>
+
+      <script src="script.js"></script>
+
+   </body>
+</html>
