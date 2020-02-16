@@ -95,5 +95,12 @@ footer a {
     font-size: 18px;
     font-family: 'Caveat', cursive;
     color: white;
-  }
+}
+
+/*sketch*/
+
+#sketch{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
   
