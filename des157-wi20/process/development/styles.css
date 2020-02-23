@@ -97,6 +97,10 @@ footer a {
     color: white;
 }
 
+footer p {
+    color: white;
+}
+
 /*sketch*/
 
 #sketch{
@@ -161,4 +165,22 @@ footer a {
 .text1 p{
     padding: 1.7em;
     text-align: justify;
+}
+
+.paperprototype{
+    border-style: dotted;
+    border-color: #5B9E04;
+    border-radius: 50px;
+    width: 90%;
+    margin: auto;
+}
+
+#paper{
+    width: 90%;
+}
+
+#paper1{
+    margin: auto;
+    width: 75%;
+    margin-bottom: 2%;
 }
