@@ -126,25 +126,25 @@ footer p {
     margin-bottom: 2%;
 }
 
-#prototype1{
+.prototype1{
     width: 50%;
     border: 3px solid #0FA3B1;
     margin-bottom: 2%;
 }
 
-#prototype2{
+.prototype2{
     width: 31%;
     padding: 5px;
     display: inline;
 }
 
-#prototype3{
+.prototype3{
     width: 31%;
     padding: 5px;
     display: inline;
 }
 
-#prototype4{
+.prototype4{
     width: 31%;
     padding: 5px;
     display: inline;
