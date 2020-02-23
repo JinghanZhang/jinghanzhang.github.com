@@ -105,3 +105,60 @@ footer a {
     padding-bottom: 50px;
 }
   
+/*comp1*/
+
+#mainimg{
+    width: 75%;
+    border: 2px dashed #0FA3B1;
+    margin-bottom: 2%;
+}
+
+.prototype{
+    margin: auto;
+    width: 75%;
+    border: 3px solid #0FA3B1;
+    padding: 50px;
+    border-radius: 50px;
+    margin-bottom: 2%;
+}
+
+#prototype1{
+    width: 50%;
+    border: 3px solid #0FA3B1;
+    margin-bottom: 2%;
+}
+
+#prototype2{
+    width: 31%;
+    padding: 5px;
+    display: inline;
+}
+
+#prototype3{
+    width: 31%;
+    padding: 5px;
+    display: inline;
+}
+
+#prototype4{
+    width: 31%;
+    padding: 5px;
+    display: inline;
+}
+
+#gif{
+    width: 40%;
+}
+
+.text1{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    background-color: rgba(124, 207, 216, 0.15);
+}
+
+.text1 p{
+    padding: 1.7em;
+    text-align: justify;
+}
