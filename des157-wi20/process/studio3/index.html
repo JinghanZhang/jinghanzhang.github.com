@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Studio 3</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gaegu&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <header><h1>A dice Game</h1></header>
+
+    <div class = "maincontainer">
+        <div class = "card">
+            <div class = "front"><p>?</p></div>
+                <div class = "back">
+                    <p id = "start" onclick="start(); display_rules();" >Start</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "rules" style = "display: none;">
+        <h2>Game Rule</h2>
+        <p>There are two players. The player whose turn it is rolls the dice. 
+            The total of the roll is added to the current player's score, unless 
+            either die comes up as a “one”. If this happens, this player's turn is 
+            over, and it is the other player’s turn. If one of the die is 1, the player
+            will lose the point of the first die, whether is 1 or other numbers. If the number
+            of the first die is larger than the second one, current player can get double
+            the score from this turn. After each roll, the current player can either roll again, 
+            (assuming a “one” was not rolled) or if the current player feels that luck is 
+            running thin, they can pass to the other player. The first player to get 100 
+            points or higher wins, or the player who gets -5 will lose and end the game.
+        </p>
+        <p id = "arrow" onclick="start2();">-></p>
+    </div>
+
+    <div class = "game" style = "display: none;">
+        <div id="gamecontrol">
+            <h2>Start a Game</h2>
+            <button id="startgame">Randomly Pick the First Player, and Start the Game</button>
+        </div>
+        <div id="game"></div>
+        <div id="actions"></div>
+        <div id="score"></div>
+    </div>
+
+    <footer>
+        <div class = "button">
+            <a id = "back" href="https://jinghanzhang.github.io/des157-wi20/"> &#8592;Back to Portal Pages</a>
+         </div>
+        <p><a href="mailto:&#106;&#104;&#122;&#122;&#104;&#097;&#110;&#103;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">Email</a>
+           / <a href="https://validator.w3.org/check?uri=referer">Valid HTML</a> / <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+        </p>
+     </footer>
+
+     <script src="script.js"></script>
+
+    
+</body>
+</html>
