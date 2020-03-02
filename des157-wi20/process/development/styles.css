@@ -184,3 +184,13 @@ footer p {
     width: 75%;
     margin-bottom: 2%;
 }
+
+.gifcontainer{
+    margin-left: 20%;
+    margin-right: auto;
+}
+
+#gif{
+    display: inline-block;
+    width: 40%;
+}
