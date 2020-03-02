@@ -151,7 +151,10 @@ footer p {
 }
 
 #gif{
+    margin-left: auto;
+    margin-right: auto;
     width: 40%;
+    display: block;
 }
 
 .text1{
