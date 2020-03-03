@@ -62,6 +62,12 @@ h2{
   animation-name: tracking-in-expand;
   animation-duration: 2.5s;
 }
+#textt{
+  color: #ffab3b;
+  text-align: center;
+  font-size: 1.7em;
+  font-family: 'Carter One';
+}
 .home img{
   width: 50%;
 }
@@ -162,7 +168,7 @@ a{
   font-family: 'Abril Fatface';
   text-align: center;
 }
-#list{
+.list{
   border-radius: 50px;
   width: 280px;
   height: 250px;
@@ -174,7 +180,7 @@ a{
   margin-left: 10%;
   margin-top: 50px;
 }
-#list li{
+.list li{
   margin: 5%;
 }
 #drag {

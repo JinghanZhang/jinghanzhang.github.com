@@ -16,6 +16,7 @@
          <h2> - Jinghan Zhang - </h2>
          <img src="images/tree.png" alt="tree">
          <p id = "explore" onclick="start();">Explore</p>
+         <p id = "textt">View in Full Screen!</p>
       </div>
       <div class = "outer-wrapper" style = "display: none;">
          <div class = "wrapper">
@@ -41,7 +42,7 @@
                   <div class = "col2" >
                      <div class = "col2-1">
                         <form id = "form">
-                           <label for = "share">Share Your Ideas!</label><br>
+                           <label>Share Your Ideas!</label><br>
                            <input type = "text" id = "ideas" name = "ideas" value = "......"><br>
                            <input type = "submit" value = "Submit">
                         </form>
@@ -56,7 +57,7 @@
                         <div class = "fourboxes"></div>
                         <div id = "forest" style = "display:none;"></div>
                      </div>
-                     <ul id = "list" id = "drag1" draggable = "true" ondragstart = "drag(event)">
+                     <ul class = "list" id = "drag1" draggable = "true" ondragstart = "drag(event)">
                         <li>Package Design</li>
                         <li>Choice of Materials</li>
                         <li>Processing</li>
