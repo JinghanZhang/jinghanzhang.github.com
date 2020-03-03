@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Studio 4</title>
+      <link rel="stylesheet" type="text/css" href="styles.css" />
+      <link href="https://fonts.googleapis.com/css?family=Carter+One&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class = "home">
+         <h1>Studio 4</h1>
+         <h2> - Jinghan Zhang - </h2>
+         <img src="images/tree.png" alt="tree">
+         <p id = "explore" onclick="start();">Explore</p>
+      </div>
+      <div class = "outer-wrapper" style = "display: none;">
+         <div class = "wrapper">
+            <div class = "slide one">
+               <div class = "container">
+                  <div class = "col1">
+                     <div id = "col1-1">
+                        <p class = "test1">
+                           About 165 billion packages are shipped in the 
+                           US each year, 
+                        </p>
+                        <p class = "test2">
+                           with the cardboard used roughly 
+                           equating to more than 1 billion trees
+                        </p>
+                        <p class = "test3">
+                           and 140 billion gallons of water.
+                        </p>
+                        <a href = "#center" id = "scroll">-></a>
+                     </div>
+                     <div class = "car"></div>
+                  </div>
+                  <div class = "col2" >
+                     <div class = "col2-1">
+                        <form id = "form">
+                           <label for = "share">Share Your Ideas!</label><br>
+                           <input type = "text" id = "ideas" name = "ideas" value = "......"><br>
+                           <input type = "submit" value = "Submit">
+                        </form>
+                        <div class = "box"></div>
+                     </div>
+                  </div>
+                  <div id = "center" class = "col3">
+                     <div id = "one">
+                        <h1 id = "title">Sustainable Packaging</h1>
+                        <p id = "text"> reduces the environmental impact and ecological footprint</p>
+                        <!-- <img id = "box" src="box.png" alt="box"> -->
+                        <div class = "fourboxes"></div>
+                        <div id = "forest" style = "display:none;"></div>
+                     </div>
+                     <ul id = "list" id = "drag1" draggable = "true" ondragstart = "drag(event)">
+                        <li>Package Design</li>
+                        <li>Choice of Materials</li>
+                        <li>Processing</li>
+                        <li>Life - Cycle</li>
+                     </ul>
+                     <div id = "drag" ondrop = "drop(event)" ondragover = "allowDrop(event)">
+                        <p id = "here">Drop List Here!</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer>
+         <div class = "button">
+            <a id = "back" href="https://jinghanzhang.github.io/des157-wi20/"> &#8592;Back to Portal Pages</a>
+         </div>
+         <p><a href="mailto:&#106;&#104;&#122;&#122;&#104;&#097;&#110;&#103;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">Email</a>
+            / <a href="https://validator.w3.org/check?uri=referer">Valid HTML</a> / <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+         </p>
+      </footer>
+      
+      <script src="script.js"></script>
+
+   </body>
+</html>
