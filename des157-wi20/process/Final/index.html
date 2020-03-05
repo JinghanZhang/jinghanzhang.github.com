@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Sustainable Packaging</title>
+      <link rel="stylesheet" type="text/css" href="styles.css" />
+      <link href="https://fonts.googleapis.com/css?family=Carter+One&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class = "home">
+         <h2>How often do you receive a package?</h2>
+         
+         <p id = "explore" onclick="start();">Button</p>
+      </div>
+      <div class = "outer-wrapper" style = "display: none;">
+         <div class = "wrapper">
+            <div class = "slide one">
+               <div class = "container">
+                  <div class = "col1">
+                     <div id = "col1-1">
+                        <p class = "test1">
+                           About 165 billion packages are shipped in the 
+                           US each year, 
+                        </p>
+                        <p class = "test2">
+                           with the cardboard used roughly 
+                           equating to more than 1 billion trees
+                        </p>
+                        <p class = "test3">
+                           and 140 billion gallons of water.
+                        </p>
+                     </div>
+                     <div class = "car"></div>
+                     <div id = "col1-2">
+                        <p class = "text-1">
+                            About 165 billion packages are shipped in the 
+                            US each year, TESTTTTT
+                         </p>
+                     </div>
+                  </div>
+                  <div class = "col2" >
+                     <div class = "col2-1">
+                        <form id = "form">
+                           <label>Share Your Ideas!</label><br>
+                           <input type = "text" id = "ideas" name = "ideas" value = "......"><br>
+                           <input type = "submit" value = "Submit">
+                        </form>
+                        <div class = "box"></div>
+                     </div>
+                  </div>
+                  <div id = "center" class = "col3">
+                     <div id = "one">
+                        <h1 id = "title">Sustainable Packaging</h1>
+                        <p id = "text"> reduces the environmental impact and ecological footprint</p>
+                        <div class = "fourboxes"></div>
+                        <div id = "forest" style = "display:none;"></div>
+                     </div>
+                     <ul class = "list" id = "drag1" draggable = "true" ondragstart = "drag(event)">
+                        <li>Package Design</li>
+                        <li>Choice of Materials</li>
+                        <li>Processing</li>
+                        <li>Life - Cycle</li>
+                     </ul>
+                     <div id = "drag" ondrop = "drop(event)" ondragover = "allowDrop(event)">
+                        <p id = "here"></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <nav>
+          <ul>
+              <li><a href="">HOME</a></li>
+              <li><a href="">SECTION1</a></li>
+              <li><a href="#center">SECTION2</a></li>
+              <li><a href="">SECTION3</a></li>
+            </ul>
+        </nav>
+      <footer>
+         <div class = "button">
+            <a id = "back" href="https://jinghanzhang.github.io/des157-wi20/"> &#8592;Back to Portal Pages</a>
+         </div>
+         <p><a href="mailto:&#106;&#104;&#122;&#122;&#104;&#097;&#110;&#103;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">Email</a>
+            / <a href="https://validator.w3.org/check?uri=referer">Valid HTML</a> / <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+         </p>
+      </footer>
+      
+      <script src="script.js"></script>
+
+   </body>
+</html>

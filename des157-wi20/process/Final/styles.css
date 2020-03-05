@@ -1,0 +1,339 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.home{
+  height: 900px;
+  text-align: center;
+}
+h1{
+  color: #ffab3b;
+  text-align: center;
+  font-size: 4em;
+  font-family: 'Carter One';
+}
+h2{
+  padding-top: 10%;
+  color: #ffab3b;
+  text-align: center;
+  font-size: 3em;
+  font-family: 'Carter One';
+}
+/*animation*/
+.tracking-in-expand {
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@-webkit-keyframes tracking-in-expand {
+  0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+ }
+  40% {
+      opacity: 0.6;
+ }
+  100% {
+      opacity: 1;
+ }
+}
+@keyframes tracking-in-expand {
+  0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+ }
+  40% {
+      opacity: 0.6;
+ }
+  100% {
+      opacity: 1;
+ }
+}
+#explore{
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  background-color: #2a5973;
+  border-radius: 50px;
+  border-style: solid;
+  color: #ffab3b;
+  text-align: center;
+  font-size: 2.5em;
+  font-family: 'Carter One';
+  cursor: pointer;
+  animation-name: tracking-in-expand;
+  animation-duration: 2.5s;
+}
+#textt{
+  color: #ffab3b;
+  text-align: center;
+  font-size: 1.7em;
+  font-family: 'Carter One';
+}
+.home img{
+  width: 50%;
+}
+/*horizontal scrolling*/
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+.one {
+  background: url("images/tree1.png");
+  background-size: auto 100vh;
+  background-repeat: repeat-x;
+  width: 400vw;
+}
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  -ms-overflow-style: none;
+  background-color: #D4E9EC;
+}
+::-webkit-scrollbar {
+  display:none;
+}
+.container {
+  margin: 10px auto;
+  width: 100%;
+}
+.container > div {
+  width: 33%;
+}
+.col1 {
+  float: left;
+  display: flex;
+  flex-direction: row;
+}
+.col2 {
+  float: right;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+.col3 {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+.test1, .test2, .test3{
+  color: #1A5276;
+  font-family: 'Dosis', sans-serif;
+  animation-name: tracking-in-expand;
+  animation-duration: 3s;
+}
+.test1{
+  font-size: 1.8em;
+  margin-left: 180px;
+  margin-top: 200px;
+}
+.test2{
+  margin-left: 180px;
+  font-size: 1.5em;
+}
+.test3{
+  margin-left: 180px;
+  font-size: 1.5em;
+}
+a{
+  text-decoration: none;
+}
+#title{
+  margin-top: 100px;
+  color: #45B39D;
+  font-size: 3em;
+  font-family: 'Carter One';
+}
+#text{
+  color: #45B39D;
+  font-size: 1.8em;
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+}
+.list{
+  border-radius: 50px;
+  width: 280px;
+  height: 250px;
+  background-color: rgba(255, 251, 237, 0.8);
+  font-size: 1.5em;
+  color: #2874A6;
+  font-family: 'Dosis', sans-serif;
+  margin-left: 10%;
+  margin-top: 50px;
+}
+.list li{
+  margin: 5%;
+}
+#drag {
+  width: 400px;
+  height: 375px;
+  margin-top: 100px;
+  border: 3px solid yellowgreen;
+  border-radius: 50px;
+  margin-left: 10%;
+  background-color: yellowgreen;
+}
+.col2-1{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+}
+#form{
+  margin-top: 100px;
+  margin-left: auto;
+}
+form label{
+  font-family: 'Carter One';
+  font-size: 1.5em;
+  color: #45B39D;
+  text-shadow: 2px 2px white;
+}
+#form input{
+  padding: 10px 24px;
+}
+input[type="text"]{
+  background-color: #45B39D;
+  border: solid white;
+  font-family: 'Quicksand';
+  color: white;
+  font-size: 1.2em;
+  margin-top: .5em;
+  height: 100px;
+}
+input[type="submit"]{
+  margin-top: .5em;
+  font-family: 'Quicksand';
+  font-size: 1em;
+  background-color: #45B39D;
+  color: #fff;
+  border-radius: 50px;
+  padding: 15px;
+  border-color: white;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #069CA6;
+}
+/*sprite animation*/
+@keyframes play {
+  100% {
+      background-position: -3800px;
+ }
+}
+.car {
+  width: 475px;
+  height: 240px;
+  margin-top: 180px;
+  margin-left: 2%;
+  background: url('images/Sprite1_car.png') left center;
+  animation: play 2s steps(8) infinite;
+}
+@keyframes play1 {
+  100% {
+      background-position: -1200px;
+ }
+}
+.box {
+  margin-top: 100px;
+  width: 240px;
+  height: 240px;
+  background: url('images/Sprite2_box.png') left center;
+  animation: play1 1.5s steps(5) infinite;
+}
+@keyframes play2 {
+  100% {
+      background-position: -2560px;
+ }
+}
+.fourboxes {
+  margin-left: 8%;
+  width: 640px;
+  height: 240px;
+  background: url('images/Sprite3_box.png') left center;
+  animation: play2 3s steps(4) infinite;
+}
+#forest {
+  margin-left: 8%;
+  width: 640px;
+  height: 240px;
+  background: url('images/Sprite4_forest.png') left center;
+  animation: play2 3s steps(4) infinite;
+}
+/*footer*/
+.button{
+  margin-left: 75%;
+  margin-right: 5%;
+  font-size: 12px;
+  text-align: center;
+  position: sticky;
+  position: -webkit-sticky;
+}
+.button a{
+  text-decoration: none;
+  color: white;
+}
+footer a {
+  text-decoration: none;
+  font-family: 'Quicksand';
+  font-size: 20px;
+}
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+  margin-top: .5em;
+  color: white;
+  padding: 1em;
+  background-color: #6AB8B5;
+  text-align: center;
+  position: fixed;
+}
+footer:hover{
+  height: 75px;
+}
+footer a {
+  color: white;
+}
+
+/*nav*/
+
+nav ul {
+  font-family: 'Dosis', sans-serif;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  list-style-type: none;
+  margin: 0;
+  float: right;
+  padding: 1em 0 0 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 10px;
+  font-weight: bold;
+  font-size: 1em;
+  border-radius: 50px;
+  background-color: rgba(157, 184, 182, 0.5);
+}
+
+nav ul li a {
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+
