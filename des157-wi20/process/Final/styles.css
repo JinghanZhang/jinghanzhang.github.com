@@ -1,10 +1,14 @@
 body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 .home{
-  height: 900px;
+  margin: auto;
+  width: 90%;
+  height: 600px;
   text-align: center;
+  background-color: #A1C8CE;
 }
 h1{
   color: #ffab3b;
@@ -13,10 +17,10 @@ h1{
   font-family: 'Carter One';
 }
 h2{
-  padding-top: 10%;
-  color: #ffab3b;
+  padding-top: 20%;
+  color: #046775;
   text-align: center;
-  font-size: 3em;
+  font-size: 2.5em;
   font-family: 'Carter One';
 }
 /*animation*/
@@ -52,12 +56,12 @@ h2{
   margin-left: auto;
   margin-right: auto;
   width: 45%;
-  background-color: #2a5973;
+  background-color: #3EACBC;
   border-radius: 50px;
   border-style: solid;
-  color: #ffab3b;
+  color: white;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 2em;
   font-family: 'Carter One';
   cursor: pointer;
   animation-name: tracking-in-expand;
@@ -336,4 +340,99 @@ nav ul li a {
   color: white;
   display: inline-block;
 }
+
+/*loading*/
+.circle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80px;
+  height: 80px;
+  margin-top: 200px;
+  position: sticky;
+}
+.circle:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 60px solid #25B6B5;
+  border-color: #25B6B5 transparent #25B6B5 transparent;
+  animation: lds-hourglass 1s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+/*flip*/
+
+.col1 ul{
+  box-shadow:0 -3px 5px -3px rgba(0,0,0,0.4);
+  position:relative;
+  width:100px;
+  height:100px;
+  perspective:200px;
+  perspective-origin:top center;
+  transform-style:preserve-3d;
+}
+.col1 ul li{
+  position:absolute;top:0;left:0;
+  width:100%;height:100%;
+  background:lemonchiffon; color:dimgray;
+  padding:0.5em;box-sizing:border-box;
+  transform:rotateX(0);
+  transform-origin:center bottom;
+  transition:transform 0.3s, height 0.1s;
+  transform-style:preserve-3d;
+}
+
+.col1 ul li.flipped {
+  transform:rotateX(-180deg);
+  backface-visibility:hidden;
+}
+
+.col1 ul.has-flippage {
+  height:200px;
+}
+.col1 ul.has-flippage li {
+  height:50%;
+}
+
+/*backface*/
+
+.col1 ul li::after {
+  content:"Click to flip back";
+  width:100%;
+  height:100%;
+  display:block;
+  background:hsl(0,0%,40%); color:hsl(0,0%,70%);
+  position:absolute;
+  top:0;
+  left:0;
+  transform-origin:center center;
+  transform:rotateX(180deg);
+  box-shadow:0 2px 4px -3px rgba(0,0,0,0.2);
+  backface-visibility:hidden;
+}
+
+.col1 ul li:nth-of-type(even) { border-top:medium solid lime; }
+.col1 ul li:nth-of-type(odd) { border-top:medium solid deeppink; }
+
+@keyframes unflip-notice {
+  0% {transform:rotateX(0);}
+  50% {transform:rotateX(-20deg);}
+  100% {transform:rotateX(0)}
+}
+
 
