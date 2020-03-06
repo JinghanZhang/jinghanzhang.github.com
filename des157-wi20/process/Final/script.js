@@ -22,7 +22,7 @@ function start() {
     for(var i = 0; i < loading.length; i++){
       loading[i].style.display = "none";
     }
-  }, 3000);
+  }, 1000);
 
 }
 
@@ -52,9 +52,7 @@ const flippeds = []
 const lis = Array.from(document.querySelectorAll("li"));
 let at = lis.length;
 document.querySelector("ul").addEventListener("click", e => {
-  /* chrome does not trigger click from flipped page,
-     when click on flipped page, event is fired on <ul>
-     this is totally diff. from Edge and firefox */
+
   const el = e.target;
   if (el.classList.contains("unflipable")) {
     el.style.animation = "none";
