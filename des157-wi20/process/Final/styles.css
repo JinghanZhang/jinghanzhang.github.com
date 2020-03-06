@@ -105,6 +105,32 @@ h2{
   -ms-overflow-style: none;
   background-color: #D4E9EC;
 }
+
+.outer-wrapper2 {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  -ms-overflow-style: none;
+  background-color: yellowgreen;
+}
+
+.outer-wrapper3 {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  -ms-overflow-style: none;
+  background-color: orange;
+}
+
+
 ::-webkit-scrollbar {
   display:none;
 }
@@ -134,8 +160,6 @@ h2{
 .test1, .test2, .test3{
   color: #1A5276;
   font-family: 'Dosis', sans-serif;
-  animation-name: tracking-in-expand;
-  animation-duration: 3s;
 }
 .test1{
   font-size: 1.8em;
@@ -236,13 +260,13 @@ input[type="submit"]:hover {
       background-position: -3800px;
  }
 }
-.car {
+#car {
   width: 475px;
   height: 240px;
-  margin-top: 180px;
-  margin-left: 2%;
+  margin-top: 200px;
+  margin-left: 10%;
   background: url('images/Sprite1_car.png') left center;
-  animation: play 2s steps(8) infinite;
+  animation: play 1s steps(8) infinite;
 }
 @keyframes play1 {
   100% {
@@ -378,18 +402,29 @@ nav ul li a {
 /*flip*/
 
 .col1 ul{
-  box-shadow:0 -3px 5px -3px rgba(0,0,0,0.4);
+  cursor: pointer;
+  list-style: none;
+  box-shadow:3px -3px 5px -3px rgba(0,0,0,5);
   position:relative;
-  width:100px;
-  height:100px;
-  perspective:200px;
+  justify-content: center;
+  width:300px;
+  height:300px;
+  perspective:300px;
+  margin-left: 30%; 
+  margin-top: 20%;
   perspective-origin:top center;
   transform-style:preserve-3d;
+  animation-name: tracking-in-expand;
+  animation-duration: 2s;
 }
 .col1 ul li{
-  position:absolute;top:0;left:0;
+  font-family: 'Dosis', sans-serif;
+  font-size: 2em;
+  position:absolute;
+  top:0;
+  left:0;
   width:100%;height:100%;
-  background:lemonchiffon; color:dimgray;
+  background:lemonchiffon; color:#06619A  ;
   padding:0.5em;box-sizing:border-box;
   transform:rotateX(0);
   transform-origin:center bottom;
@@ -403,20 +438,23 @@ nav ul li a {
 }
 
 .col1 ul.has-flippage {
-  height:200px;
+  height:300px;
 }
 .col1 ul.has-flippage li {
-  height:50%;
+  height:100%;
 }
 
 /*backface*/
 
 .col1 ul li::after {
+  font-size: .8em;
+  text-align: center;
   content:"Click to flip back";
   width:100%;
   height:100%;
   display:block;
-  background:hsl(0,0%,40%); color:hsl(0,0%,70%);
+  background:#E7E7C1; 
+  color:white;
   position:absolute;
   top:0;
   left:0;
@@ -426,13 +464,35 @@ nav ul li a {
   backface-visibility:hidden;
 }
 
-.col1 ul li:nth-of-type(even) { border-top:medium solid lime; }
-.col1 ul li:nth-of-type(odd) { border-top:medium solid deeppink; }
-
-@keyframes unflip-notice {
-  0% {transform:rotateX(0);}
-  50% {transform:rotateX(-20deg);}
-  100% {transform:rotateX(0)}
+.col1 ul li:nth-of-type(even) { 
+  border-top:medium solid yellowgreen; 
+}
+.col1 ul li:nth-of-type(odd) { 
+  border-top:medium solid orange; 
 }
 
+@keyframes unflip-notice {
+  0% {
+    transform:rotateX(0);
+  }
+  50% {
+    transform:rotateX(-20deg);
+  }
+  100% {
+    transform:rotateX(0)
+  }
+}
+
+/*button*/
+#nextBtn{
+  color: #ffab3b;
+  margin-top: 300px;
+  margin-right: 3%;
+  font-size: 2em;
+  font-family: 'Carter One';
+  background-color: transparent;
+  border-style: solid;
+  border-radius: 50px;
+  border-color: #ffab3b;
+}
 

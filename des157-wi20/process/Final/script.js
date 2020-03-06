@@ -76,3 +76,27 @@ document.querySelector("ul").addEventListener("click", e => {
     lis[at].classList.add("flipped");
   }
 })
+
+function next() {
+
+  var page2 = document.getElementsByClassName("outer-wrapper2");
+    for(var i = 0; i < page2.length; i++){
+        page2[i].style.display = null;
+  }
+  var main = document.getElementsByClassName("outer-wrapper");
+    for(var i = 0; i < main.length; i++){
+        main[i].style.display = "none";
+  }
+}
+
+function next2() {
+
+  var page2 = document.getElementsByClassName("outer-wrapper3");
+    for(var i = 0; i < page2.length; i++){
+        page2[i].style.display = null;
+  }
+  var main = document.getElementsByClassName("outer-wrapper2");
+    for(var i = 0; i < main.length; i++){
+        main[i].style.display = "none";
+  }
+}

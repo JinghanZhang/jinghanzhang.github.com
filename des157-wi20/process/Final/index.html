@@ -29,52 +29,96 @@
                            <li>Amazon delivers approximately 1600000 packages each day.</li>
                        </ul>
                      </div>
-                     <div class = "car"></div>
+                     <div id = "car"></div>
                      <div id = "col1-2">
                         <p class = "test1">
                            About 165 billion packages are shipped in the 
-                           US each year, 
+                           US each year
                         </p>
                         <p class = "test2">
-                           with the cardboard used roughly 
+                           the cardboard used roughly 
                            equating to more than 1 billion trees
                         </p>
                         <p class = "test3">
                            and 140 billion gallons of water.
                         </p>
                      </div>
+                     <div id = "col1-3">
+                        
+                     </div>
                   </div>
                   <div class = "col2" >
-                     <div class = "col2-1">
-                        <form id = "form">
-                           <label>Share Your Ideas!</label><br>
-                           <input type = "text" id = "ideas" name = "ideas" value = "......"><br>
-                           <input type = "submit" value = "Submit">
-                        </form>
-                        <div class = "box"></div>
-                     </div>
+                     
+                     <button id = "nextBtn" type="button" onclick="next();">Next Page</button>
                   </div>
                   <div id = "center" class = "col3">
-                     <div id = "one">
-                        <h1 id = "title">Sustainable Packaging</h1>
-                        <p id = "text"> reduces the environmental impact and ecological footprint</p>
-                        <div class = "fourboxes"></div>
-                        <div id = "forest" style = "display:none;"></div>
-                     </div>
-                     <ul class = "list" id = "drag1" draggable = "true" ondragstart = "drag(event)">
-                        <li>Package Design</li>
-                        <li>Choice of Materials</li>
-                        <li>Processing</li>
-                        <li>Life - Cycle</li>
-                     </ul>
-                     <div id = "drag" ondrop = "drop(event)" ondragover = "allowDrop(event)">
-                        <p id = "here"></p>
-                     </div>
+                     
                   </div>
                </div>
             </div>
          </div>
       </div>
+      <div class="outer-wrapper2" style = "display: none;">
+         <div class="wrapper">
+           <div class="slide one">
+            <div class = "container">
+               <div class = "col1">
+                  <div id = "col1-1"></div>
+                    
+               </div>
+               <div class = "col2" >
+                  <div class = "col2-1">
+                     
+                  </div>
+                  <button id = "nextBtn" type="button" onclick="next2();">Next Page</button>
+               </div>
+               <div id = "center" class = "col3">
+                  <div id = "one">
+                     <h1 id = "title">Sustainable Packaging</h1>
+                     <p id = "text"> reduces the environmental impact and ecological footprint</p>
+                     <div class = "fourboxes"></div>
+                     <div id = "forest" style = "display:none;"></div>
+                  </div>
+                  <ul class = "list" id = "drag1" draggable = "true" ondragstart = "drag(event)">
+                     <li>Package Design</li>
+                     <li>Choice of Materials</li>
+                     <li>Processing</li>
+                     <li>Life - Cycle</li>
+                  </ul>
+                  <div id = "drag" ondrop = "drop(event)" ondragover = "allowDrop(event)">
+                     <p id = "here"></p>
+                  </div>
+               </div>
+            </div>
+           </div>
+         </div>
+      </div>
+      <div class="outer-wrapper3" style = "display: none;">
+         <div class="wrapper">
+           <div class="slide one">
+            <div class = "container">
+               <div class = "col1">
+                  <div id = "col1-1"></div>
+                    
+               </div>
+               <div class = "col2" >
+                  <div class = "col2-1">
+                     <form id = "form">
+                        <label>Share Your Ideas!</label><br>
+                        <input type = "text" id = "ideas" name = "ideas" value = "......"><br>
+                        <input type = "submit" value = "Submit">
+                     </form>
+                     <div class = "box"></div>
+                  </div>
+                  <button id = "nextBtn" type="button" onclick="next();">Next Page</button>
+               </div>
+               <div id = "center" class = "col3">
+               </div>
+            </div>
+           </div>
+         </div>
+      </div>
+
       <nav style = "display:none">
           <ul>
               <li><a href="">HOME</a></li>
