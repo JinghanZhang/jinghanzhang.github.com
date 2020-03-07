@@ -8,10 +8,11 @@
       <link rel="stylesheet" type="text/css" href="styles.css" />
       <link href="https://fonts.googleapis.com/css?family=Carter+One&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
+      <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+      <script src="truck_HTML5 Canvas.js?1583570438806"></script>
    </head>
-   <body>
+   <body onload="init();">
       <div class = "home">
          <h2>Sustainable Packaging</h2>
          <p id = "explore" onclick="start();">Explore the Packaging World</p>
@@ -30,7 +31,10 @@
                        </ul>
                        <p id = "click1">Click to flip</p>
                      </div>
-                     <div id = "car"></div>
+                     <div id="animation_container1">
+                        <canvas id="canvas1" width="256" height="144"></canvas>
+                        <div id="dom_overlay_container1"></div>
+                     </div>
                      <div id = "col1-2">
                         <p class = "test1">
                            About 165 billion packages are shipped in the 

@@ -299,6 +299,7 @@ input[type="submit"]:hover {
   background-color: rgba(202, 235, 242, 0.2);
   padding: 10px;
 }
+
 /*sprite animation*/
 @keyframes play {
   100% {
@@ -344,6 +345,7 @@ input[type="submit"]:hover {
   background: url('images/Sprite4_forest.png') left center;
   animation: play2 3s steps(4) infinite;
 }
+
 /*footer*/
 .button{
   margin-left: 75%;
@@ -557,5 +559,30 @@ nav ul li a {
 
 #img {
   position: absolute;
+}
+/*animate*/
+/*truck*/
+#animation_container1{
+  background-color:transparent; 
+  width:256px; 
+  height:144px;
+  margin-top: 150px;
+  margin-left: 12%;
+  margin-right: 20px;
+}
+#canvas1{
+  position: absolute; 
+  display: block; 
+  background-color:transparent;
+}
+#dom_overlay_container1{
+  pointer-events:none; 
+  overflow:hidden; 
+  width:256px; 
+  height:144px; 
+  position: absolute; 
+  left: 0px; 
+  top: 0px; 
+  display: block;
 }
 
