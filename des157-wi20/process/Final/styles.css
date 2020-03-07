@@ -1,4 +1,4 @@
-body {
+  body {
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -104,6 +104,12 @@ p{
   background-repeat: repeat-x;
   width: 400vw;
 }
+.two {
+  background: url("images/ocean.png");
+  background-size: auto 100vh;
+  background-repeat: repeat-x;
+  width: 400vw;
+}
 .outer-wrapper {
   width: 100vh;
   height: 100vw;
@@ -125,7 +131,7 @@ p{
   overflow-x: hidden;
   position: absolute;
   -ms-overflow-style: none;
-  background-color: #0375B4;
+  background-color: white;
 }
 
 .outer-wrapper3 {
@@ -274,18 +280,24 @@ input[type="submit"]:hover {
   font-size: 1.6em;
   margin-left: 10%;
   margin-top: 10%;
-  color:#FFCE00;
+  color:#FF3B3F;
+  background-color: rgba(202, 235, 242, 0.2);
+  padding: 10px;
 }
 #text2-2{
   width: 60%;
   font-size: 1.3em;
   margin-top: 15%;
-  color:#FFCE00;
+  color:#FF3B3F;
+  background-color: rgba(202, 235, 242, 0.2);
+  padding: 10px;
 }
 #text2-3{
   font-size: 1.3em;
   margin-top: 15%;
-  color:#FFCE00;
+  color:#FF3B3F;
+  background-color: rgba(202, 235, 242, 0.2);
+  padding: 10px;
 }
 /*sprite animation*/
 @keyframes play {
