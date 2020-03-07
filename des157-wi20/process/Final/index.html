@@ -8,8 +8,8 @@
       <link rel="stylesheet" type="text/css" href="styles.css" />
       <link href="https://fonts.googleapis.com/css?family=Carter+One&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
    </head>
    <body>
       <div class = "home">
@@ -28,6 +28,7 @@
                            <li>FedEx delivers approximately 6200000 packages each day.</li>
                            <li>Amazon delivers approximately 1600000 packages each day.</li>
                        </ul>
+                       <p id = "click1">Click to flip</p>
                      </div>
                      <div id = "car"></div>
                      <div id = "col1-2">
@@ -36,23 +37,18 @@
                            US each year
                         </p>
                         <p class = "test2">
-                           the cardboard used roughly 
-                           equating to more than 1 billion trees
+                           the cardboard used roughly equating to more than 1 billion trees and 140 billion gallons of water.
                         </p>
-                        <p class = "test3">
-                           and 140 billion gallons of water.
-                        </p>
-                     </div>
-                     <div id = "col1-3">
-                        
                      </div>
                   </div>
                   <div class = "col2" >
-                     
-                     <button id = "nextBtn" type="button" onclick="next();">Next Page</button>
+                     <div class = "col2-1">
+                     <h3 id = "text1-3">850 million tonnes of paper and cardboard are thrown away annually.</h3>
+                     </div>
+                     <button id = "nextBtn" type="button" onclick="next();">Next</button>
                   </div>
-                  <div id = "center" class = "col3">
-                     
+                  <div class = "col3">
+                     <h3 id = "text1-2">80% products packaged with cardboard.</h3>
                   </div>
                </div>
             </div>
@@ -63,30 +59,23 @@
            <div class="slide one">
             <div class = "container">
                <div class = "col1">
-                  <div id = "col1-1"></div>
-                    
+                  <div id = "col1-1">
+                     <p id = "text2-1">We are producing over 300 million tons of plastic every year, 
+                        50% of which is for single-use purposes – utilized for just a 
+                        few moments, but on the planet for at least several hundred years.</p>
+                  </div>
                </div>
                <div class = "col2" >
                   <div class = "col2-1">
-                     
+                     <p id = "text2-2">500 million straws are used every single day, 
+                     as many as 8.3 billion plastic straws pollute the world's beaches.</p>
                   </div>
-                  <button id = "nextBtn" type="button" onclick="next2();">Next Page</button>
+                  <button id = "nextBtn" type="button" onclick="next2();">Next</button>
                </div>
-               <div id = "center" class = "col3">
-                  <div id = "one">
-                     <h1 id = "title">Sustainable Packaging</h1>
-                     <p id = "text"> reduces the environmental impact and ecological footprint</p>
-                     <div class = "fourboxes"></div>
-                     <div id = "forest" style = "display:none;"></div>
-                  </div>
-                  <ul class = "list" id = "drag1" draggable = "true" ondragstart = "drag(event)">
-                     <li>Package Design</li>
-                     <li>Choice of Materials</li>
-                     <li>Processing</li>
-                     <li>Life - Cycle</li>
-                  </ul>
-                  <div id = "drag" ondrop = "drop(event)" ondragover = "allowDrop(event)">
-                     <p id = "here"></p>
+               <div class = "col3">
+                  <p id = "text2-3">More than 8 million tons of plastic is dumped into our oceans every year,
+                     and straws comprise just 0.025 percent of that.
+                  </p>
                   </div>
                </div>
             </div>
@@ -98,8 +87,25 @@
            <div class="slide one">
             <div class = "container">
                <div class = "col1">
-                  <div id = "col1-1"></div>
-                    
+                  <div id = "col1-1">
+                     <div id = "one">
+                        <h1 id = "title">Sustainable Packaging</h1>
+                        <p id = "text"> reduces the environmental impact and ecological footprint</p>
+                        <div class = "fourboxes"></div>
+                        <div id = "forest" style = "display:none;"></div>
+                     </div>
+                  </div>
+                  <div id = "col1-2">
+                     <ul class = "list" id = "drag1" draggable = "true" ondragstart = "drag(event)">
+                        <li>Package Design</li>
+                        <li>Choice of Materials</li>
+                        <li>Processing</li>
+                        <li>Life - Cycle</li>
+                     </ul>
+                     <div id = "drag" ondrop = "drop(event)" ondragover = "allowDrop(event)">
+                        <p id = "here"></p>
+                     </div>
+                  </div>
                </div>
                <div class = "col2" >
                   <div class = "col2-1">
@@ -110,9 +116,11 @@
                      </form>
                      <div class = "box"></div>
                   </div>
-                  <button id = "nextBtn" type="button" onclick="next();">Next Page</button>
                </div>
-               <div id = "center" class = "col3">
+               <div class = "col3">
+                  <div id="imagecontainer">
+                     <img id="img" src="1.jpg" alt="Alternate Text">
+                 </div>
                </div>
             </div>
            </div>
@@ -120,12 +128,12 @@
       </div>
 
       <nav style = "display:none">
-          <ul>
-              <li><a href="">HOME</a></li>
-              <li><a href="">SECTION1</a></li>
-              <li><a href="#center">SECTION2</a></li>
-              <li><a href="">SECTION3</a></li>
-            </ul>
+         <ul>
+            <li><a href = "">HOME</a></li>
+            <li onclick="next1();">PAGE1</li>
+            <li onclick="next();">PAGE2</li>
+            <li onclick="next2();">PAGE3</li>
+         </ul>
         </nav>
       <footer>
          <div class = "button">

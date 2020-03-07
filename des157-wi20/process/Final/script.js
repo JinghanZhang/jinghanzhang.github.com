@@ -22,7 +22,7 @@ function start() {
     for(var i = 0; i < loading.length; i++){
       loading[i].style.display = "none";
     }
-  }, 1000);
+  }, 3000);
 
 }
 
@@ -83,9 +83,29 @@ function next() {
     for(var i = 0; i < page2.length; i++){
         page2[i].style.display = null;
   }
-  var main = document.getElementsByClassName("outer-wrapper");
-    for(var i = 0; i < main.length; i++){
-        main[i].style.display = "none";
+  var page1 = document.getElementsByClassName("outer-wrapper");
+    for(var i = 0; i < page1.length; i++){
+      page1[i].style.display = "none";
+  }
+  var page2 = document.getElementsByClassName("outer-wrapper3");
+    for(var i = 0; i < page2.length; i++){
+        page2[i].style.display = "none";
+  }
+}
+
+function next1() {
+
+  var page2 = document.getElementsByClassName("outer-wrapper2");
+    for(var i = 0; i < page2.length; i++){
+        page2[i].style.display = "none";
+  }
+  var page1 = document.getElementsByClassName("outer-wrapper");
+    for(var i = 0; i < page1.length; i++){
+      page1[i].style.display = null;
+  }
+  var page2 = document.getElementsByClassName("outer-wrapper3");
+    for(var i = 0; i < page2.length; i++){
+        page2[i].style.display = "none";
   }
 }
 
@@ -95,8 +115,59 @@ function next2() {
     for(var i = 0; i < page2.length; i++){
         page2[i].style.display = null;
   }
-  var main = document.getElementsByClassName("outer-wrapper2");
-    for(var i = 0; i < main.length; i++){
-        main[i].style.display = "none";
+  var page1 = document.getElementsByClassName("outer-wrapper2");
+    for(var i = 0; i < page1.length; i++){
+      page1[i].style.display = "none";
   }
+  var page1 = document.getElementsByClassName("outer-wrapper");
+    for(var i = 0; i < page1.length; i++){
+      page1[i].style.display = "none";
+  }
+}
+
+/*img*/
+document.getElementById("imagecontainer").onclick = function () {
+  var num = Math.floor(Math.random() * 5) + 1;
+  console.log(num);
+  document.getElementById("img").src = num+".jpg";
+  document.getElementById("img").style.marginLeft = event.clientX + "px";
+  document.getElementById("img").style.marginTop = event.clientY + "px";
+}
+
+/*chain*/
+var points = 25;
+
+// The distance between the points:
+var length = 35;
+
+var path = new Path({
+	strokeColor: '#E4141B',
+	strokeWidth: 20,
+	strokeCap: 'round'
+});
+
+var start = view.center / [10, 1];
+for (var i = 0; i < points; i++)
+	path.add(start + new Point(i * length, 0));
+
+function onMouseMove(event) {
+	path.firstSegment.point = event.point;
+	for (var i = 0; i < points - 1; i++) {
+		var segment = path.segments[i];
+		var nextSegment = segment.next;
+		var vector = segment.point - nextSegment.point;
+		vector.length = length;
+		nextSegment.point = segment.point - vector;
+	}
+	path.smooth({ type: 'continuous' });
+}
+
+function onMouseDown(event) {
+	path.fullySelected = true;
+	path.strokeColor = '#e08285';
+}
+
+function onMouseUp(event) {
+	path.fullySelected = false;
+	path.strokeColor = '#e4141b';
 }

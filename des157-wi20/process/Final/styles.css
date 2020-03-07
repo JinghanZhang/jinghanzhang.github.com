@@ -23,6 +23,16 @@ h2{
   font-size: 2.5em;
   font-family: 'Carter One';
 }
+h3{
+  font-family: 'Sen', sans-serif;
+  font-size: 1.7em;
+  color: white;
+  text-align: center;
+}
+p{
+  font-family: 'Sen', sans-serif;
+  text-align: justify;
+}
 /*animation*/
 .tracking-in-expand {
   -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
@@ -103,7 +113,7 @@ h2{
   overflow-x: hidden;
   position: absolute;
   -ms-overflow-style: none;
-  background-color: #D4E9EC;
+  background-color: #AB987A;
 }
 
 .outer-wrapper2 {
@@ -115,7 +125,7 @@ h2{
   overflow-x: hidden;
   position: absolute;
   -ms-overflow-style: none;
-  background-color: yellowgreen;
+  background-color: #0375B4;
 }
 
 .outer-wrapper3 {
@@ -127,10 +137,8 @@ h2{
   overflow-x: hidden;
   position: absolute;
   -ms-overflow-style: none;
-  background-color: orange;
+  background-color: #015249;
 }
-
-
 ::-webkit-scrollbar {
   display:none;
 }
@@ -157,9 +165,9 @@ h2{
   display: flex;
   flex-direction: row;
 }
-.test1, .test2, .test3{
-  color: #1A5276;
-  font-family: 'Dosis', sans-serif;
+.test1, .test2{
+  color: white;
+  font-family: 'Sen', sans-serif;
 }
 .test1{
   font-size: 1.8em;
@@ -170,21 +178,20 @@ h2{
   margin-left: 180px;
   font-size: 1.5em;
 }
-.test3{
-  margin-left: 180px;
-  font-size: 1.5em;
-}
 a{
   text-decoration: none;
 }
+#one{
+  margin-left: 20%;
+}
 #title{
   margin-top: 100px;
-  color: #45B39D;
+  color: white;
   font-size: 3em;
   font-family: 'Carter One';
 }
 #text{
-  color: #45B39D;
+  color: white;
   font-size: 1.8em;
   font-family: 'Dosis', sans-serif;
   text-align: center;
@@ -209,8 +216,8 @@ a{
   margin-top: 100px;
   border: 3px solid yellowgreen;
   border-radius: 50px;
-  margin-left: 10%;
-  background-color: yellowgreen;
+  margin-left: 20%;
+  background-color: white;
 }
 .col2-1{
   margin-left: auto;
@@ -254,6 +261,32 @@ input[type="submit"]{
 input[type="submit"]:hover {
   background-color: #069CA6;
 }
+#text1-2{
+  padding-top: 15%;
+  padding-left: 10%;
+  font-size: 1.2em;
+}
+#text1-3{
+  padding-top: 15%;
+}
+#text2-1{
+  width: 50%;
+  font-size: 1.6em;
+  margin-left: 10%;
+  margin-top: 10%;
+  color:#FFCE00;
+}
+#text2-2{
+  width: 60%;
+  font-size: 1.3em;
+  margin-top: 15%;
+  color:#FFCE00;
+}
+#text2-3{
+  font-size: 1.3em;
+  margin-top: 15%;
+  color:#FFCE00;
+}
 /*sprite animation*/
 @keyframes play {
   100% {
@@ -286,7 +319,7 @@ input[type="submit"]:hover {
  }
 }
 .fourboxes {
-  margin-left: 8%;
+  margin-left: 0;
   width: 640px;
   height: 240px;
   background: url('images/Sprite3_box.png') left center;
@@ -356,13 +389,15 @@ nav ul li {
   font-size: 1em;
   border-radius: 50px;
   background-color: rgba(157, 184, 182, 0.5);
-}
-
-nav ul li a {
-  padding: 20px;
+  padding: 10px;
   text-decoration: none;
   color: white;
   display: inline-block;
+}
+
+nav ul li a {
+  display: inline-block;
+  color: white;
 }
 
 /*loading*/
@@ -400,11 +435,10 @@ nav ul li a {
 }
 
 /*flip*/
-
-.col1 ul{
+.col1 #col1-1 ul{
   cursor: pointer;
   list-style: none;
-  box-shadow:3px -3px 5px -3px rgba(0,0,0,5);
+  box-shadow:3px 3px 2px rgba(0,0,0,5);
   position:relative;
   justify-content: center;
   width:300px;
@@ -417,14 +451,16 @@ nav ul li a {
   animation-name: tracking-in-expand;
   animation-duration: 2s;
 }
-.col1 ul li{
-  font-family: 'Dosis', sans-serif;
+.col1 #col1-1 ul li{
+  font-family: 'Sen', sans-serif;
   font-size: 2em;
   position:absolute;
   top:0;
   left:0;
-  width:100%;height:100%;
-  background:lemonchiffon; color:#06619A  ;
+  width:100%;
+  height:100%;
+  background:#FFF4D3;
+  color:#F78733;
   padding:0.5em;box-sizing:border-box;
   transform:rotateX(0);
   transform-origin:center bottom;
@@ -432,21 +468,20 @@ nav ul li a {
   transform-style:preserve-3d;
 }
 
-.col1 ul li.flipped {
+.col1 #col1-1 ul li.flipped {
   transform:rotateX(-180deg);
   backface-visibility:hidden;
 }
 
-.col1 ul.has-flippage {
+.col1 #col1-1 ul.has-flippage {
   height:300px;
 }
-.col1 ul.has-flippage li {
+.col1 #col1-1 ul.has-flippage li {
   height:100%;
 }
 
 /*backface*/
-
-.col1 ul li::after {
+.col1 #col1-1 ul li::after {
   font-size: .8em;
   text-align: center;
   content:"Click to flip back";
@@ -464,11 +499,11 @@ nav ul li a {
   backface-visibility:hidden;
 }
 
-.col1 ul li:nth-of-type(even) { 
-  border-top:medium solid yellowgreen; 
+.col1 #col1-1 ul li:nth-of-type(even) { 
+  border-top:medium solid #DFDCE3; 
 }
-.col1 ul li:nth-of-type(odd) { 
-  border-top:medium solid orange; 
+.col1 #col1-1 ul li:nth-of-type(odd) { 
+  border-top:medium solid rgb(233, 198, 42); 
 }
 
 @keyframes unflip-notice {
@@ -483,16 +518,32 @@ nav ul li a {
   }
 }
 
+#click1{
+  font-family: 'Sen', sans-serif;
+  color: white;
+  font-size: 1em;
+  margin-left: 65%;
+}
 /*button*/
 #nextBtn{
   color: #ffab3b;
   margin-top: 300px;
-  margin-right: 3%;
+  margin-right: 5%;
   font-size: 2em;
   font-family: 'Carter One';
   background-color: transparent;
   border-style: solid;
   border-radius: 50px;
   border-color: #ffab3b;
+}
+/*img display*/
+#imagecontainer {
+  width: 500px;
+  height: 720px;
+  background-color: #e5e7f5
+}
+
+#img {
+  position: absolute;
 }
 
