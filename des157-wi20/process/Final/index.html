@@ -7,8 +7,7 @@
       <title>Sustainable Packaging</title>
       <link rel="stylesheet" type="text/css" href="styles.css" />
       <link href="https://fonts.googleapis.com/css?family=Carter+One&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Quicksand:500&display=swap" rel="stylesheet">
       <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
       <script src="truck_HTML5 Canvas.js?1583570438806"></script>
    </head>
@@ -71,8 +70,10 @@
                </div>
                <div class = "col2" >
                   <div class = "col2-1">
-                     <p id = "text2-2">500 million straws are used every single day, 
-                     as many as 8.3 billion plastic straws pollute the world's beaches.</p>
+                     <p id = "text2-2">Plastic pollution impacts sea turtles, whales, seabirds, fish, coral reefs,
+                         and countless other marine species and habitats. Scientists estimate that more than half 
+                         of the world's sea turtles and nearly every seabird on Earth have eaten plastic in their 
+                         lifetimes.</p>
                   </div>
                   <button id = "nextBtn" type="button" onclick="next2();">Next</button>
                </div>
@@ -100,14 +101,14 @@
                   </div>
                   <div id = "col1-2">
                      <ul class = "list" id = "drag1" draggable = "true" ondragstart = "drag(event)">
-                        <li>Package Design</li>
+                        <li class="popup" onmouseover="popupfunction()">Package Design<span class="popuptext" id="myPopup">TEST!!!</span></li>
                         <li>Choice of Materials</li>
-                        <li>Processing</li>
+                        <li>Manufacture</li>
                         <li>Life - Cycle</li>
                      </ul>
-                     <div id = "drag" ondrop = "drop(event)" ondragover = "allowDrop(event)">
-                        <p id = "here"></p>
-                     </div>
+                     <!-- <div id = "drag" ondrop = "drop(event)" ondragover = "allowDrop(event)">
+                        <p id = "here">Drog</p>
+                     </div> -->
                   </div>
                </div>
                <div class = "col2" >

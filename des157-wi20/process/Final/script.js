@@ -315,3 +315,9 @@ function handleComplete(evt,comp) {
   
   })(createjs = createjs||{}, AdobeAn = AdobeAn||{});
   var createjs, AdobeAn;
+
+  /*popup*/
+  function popupfunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+    }
