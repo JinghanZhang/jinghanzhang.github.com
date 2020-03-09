@@ -134,5 +134,9 @@ document.getElementById("imagecontainer").onclick = function () {
   document.getElementById("img").style.marginTop = (event.clientY - 100) + "px";
 }
 
-
+/*popup*/
+function popupfunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+  }
 
