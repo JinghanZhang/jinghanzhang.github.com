@@ -8,10 +8,8 @@
       <link rel="stylesheet" type="text/css" href="styles.css" />
       <link href="https://fonts.googleapis.com/css?family=Carter+One&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Quicksand:500&display=swap" rel="stylesheet">
-      <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-      <script src="truck_HTML5 Canvas.js?1583570438806"></script>
    </head>
-   <body onload="init();">
+   <body>
       <div class = "home">
          <h2>Sustainable Packaging</h2>
          <p id = "explore" onclick="start();">Explore the Packaging World</p>
@@ -22,19 +20,16 @@
             <div class = "slide one">
                <div class = "container">
                   <div class = "col1">
-                     <div id = "col1-1">
+                     <section id = "col1-1">
                         <ul>
                            <li class="unflipable">USPS delivers approximately 187800000 packages everyday.</li>
                            <li>FedEx delivers approximately 6200000 packages each day.</li>
                            <li>Amazon delivers approximately 1600000 packages each day.</li>
                        </ul>
                        <p id = "click1">Click to flip</p>
-                     </div>
-                     <div id="animation_container1">
-                        <canvas id="canvas1" width="256" height="144"></canvas>
-                        <div id="dom_overlay_container1"></div>
-                     </div>
-                     <div id = "col1-2">
+                     </section>
+                     <div id = "car"></div>
+                     <section id = "col1-2">
                         <p class = "test1">
                            About 165 billion packages are shipped in the 
                            US each year
@@ -42,12 +37,12 @@
                         <p class = "test2">
                            the cardboard used roughly equating to more than 1 billion trees and 140 billion gallons of water.
                         </p>
-                     </div>
+                     </section>
                   </div>
                   <div class = "col2" >
-                     <div class = "col2-1">
+                     <section class = "col2-1">
                      <h3 id = "text1-3">850 million tonnes of paper and cardboard are thrown away annually.</h3>
-                     </div>
+                     </section>
                      <button id = "nextBtn" type="button" onclick="next();">Next</button>
                   </div>
                   <div class = "col3">
@@ -62,19 +57,19 @@
            <div class="slide two">
             <div class = "container">
                <div class = "col1">
-                  <div id = "col1-1">
+                  <section id = "col1-1">
                      <p id = "text2-1">We are producing over 300 million tons of plastic every year, 
                         50% of which is for single-use purposes – utilized for just a 
                         few moments, but on the planet for at least several hundred years.</p>
-                  </div>
+                  </section>
                </div>
                <div class = "col2" >
-                  <div class = "col2-1">
+                  <section class = "col2-1">
                      <p id = "text2-2">Plastic pollution impacts sea turtles, whales, seabirds, fish, coral reefs,
                          and countless other marine species and habitats. Scientists estimate that more than half 
                          of the world's sea turtles and nearly every seabird on Earth have eaten plastic in their 
                          lifetimes.</p>
-                  </div>
+                  </section>
                   <button id = "nextBtn" type="button" onclick="next2();">Next</button>
                </div>
                <div class = "col3">
@@ -91,39 +86,39 @@
            <div class="slide one">
             <div class = "container">
                <div class = "col1">
-                  <div id = "col1-1">
+                  <section id = "col1-1">
                      <div id = "one">
                         <h1 id = "title">Sustainable Packaging</h1>
                         <p id = "text"> reduces the environmental impact and ecological footprint</p>
                         <div class = "fourboxes"></div>
                         <div id = "forest" style = "display:none;"></div>
                      </div>
-                  </div>
-                  <div id = "col1-2">
+                  </section>
+                  <section id = "col1-2">
                      <ul class = "list" id = "drag1" draggable = "true" ondragstart = "drag(event)">
-                        <li class="popup" onmouseover="popupfunction()">Package Design<span class="popuptext" id="myPopup">TEST!!!</span></li>
+                        <li>Package Design</li>
                         <li>Choice of Materials</li>
                         <li>Manufacture</li>
                         <li>Life - Cycle</li>
                      </ul>
-                     <!-- <div id = "drag" ondrop = "drop(event)" ondragover = "allowDrop(event)">
-                        <p id = "here">Drog</p>
-                     </div> -->
-                  </div>
+                     <div id = "drag" ondrop = "drop(event)" ondragover = "allowDrop(event)">
+                        <p id = "here">Drop List Here</p>
+                     </div>
+                  </section>
                </div>
                <div class = "col2" >
-                  <div class = "col2-1">
-                     <form id = "form">
-                        <label>Share Your Ideas!</label><br>
-                        <input type = "text" id = "ideas" name = "ideas" value = "......"><br>
-                        <input type = "submit" value = "Submit">
+                  <section class = "col2-1">
+                     <form>
+                        <p>Share Your Ideas!</p><br>
+                        <textarea id="textarea" rows="5" cols="50">...</textarea>
                      </form>
                      <div class = "box"></div>
-                  </div>
+                  </section>
                </div>
                <div class = "col3">
                   <div id="imagecontainer">
-                     <img id="img" src="1.jpg" alt="Alternate Text">
+                     <p>Click anywhere inside to discover different packaging</p>
+                     <img id="img" src="images/2.png" alt="Packaging">
                  </div>
                </div>
             </div>
