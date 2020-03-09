@@ -27,7 +27,7 @@ h3{
   font-family: 'Quicksand', sans-serif;
   font-size: 1.7em;
   color: white;
-  text-align: center;
+
 }
 p{
   font-family: 'Quicksand', sans-serif;
@@ -65,7 +65,7 @@ p{
 #explore{
   margin-left: auto;
   margin-right: auto;
-  width: 45%;
+  width: 30%;
   background-color: #3EACBC;
   border-radius: 50px;
   border-style: solid;
@@ -99,13 +99,19 @@ p{
   transform-origin: top left;
 }
 .one {
-  background: url("images/tree1.png");
+  background: url("images/factory.png");
   background-size: auto 100vh;
   background-repeat: repeat-x;
   width: 400vw;
 }
 .two {
   background: url("images/ocean.png");
+  background-size: auto 100vh;
+  background-repeat: repeat-x;
+  width: 400vw;
+}
+.three {
+  background: url("images/tree1.png");
   background-size: auto 100vh;
   background-repeat: repeat-x;
   width: 400vw;
@@ -260,7 +266,10 @@ textarea{
   font-size: 1.2em;
 }
 #text1-3{
+  width: 400px;
+  font-size: 1.3em;
   padding-top: 15%;
+  text-align: justify;
 }
 #text2-1{
   width: 50%;
@@ -286,9 +295,22 @@ textarea{
   background-color: rgba(202, 235, 242, 0.2);
   padding: 10px;
 }
+#text1-4{
+  color: white;
+  font-size: 2em;
+  margin-top: 200px;
+  margin-left: 15%;
+}
 .outer-wrapper2 #col1-2{
   display: flex;
   flex-direction: row;
+}
+
+#col3-1{
+  margin-top: 100px;
+  margin-left: 15%;
+  color: white;
+  width: 500px;
 }
 
 /*sprite animation*/
@@ -548,20 +570,22 @@ nav ul li a {
 }
 /*img display*/
 #imagecontainer {
+  cursor: pointer;
   color: white;
   font-family: 'Quicksand', sans-serif;
   margin-top: 100px;
-  width: 300px;
-  height: 200px;
+  width: 275px;
+  height: 275px;
   border-color: yellowgreen;
   border-style: solid;
-  border-radius: 50px;
+  border-radius: 50%;
 }
 
 #imagecontainer p{
   text-align: justify;
   margin-left: 5%;
   margin-right: 5%;
+  margin-top: 40%;
 }
 
 #img {
