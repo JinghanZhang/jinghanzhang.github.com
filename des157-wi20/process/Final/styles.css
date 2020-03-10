@@ -65,7 +65,8 @@ p{
 #explore{
   margin-left: auto;
   margin-right: auto;
-  width: 30%;
+  width: 100px;
+  padding: 10px;
   background-color: #3EACBC;
   border-radius: 50px;
   border-style: solid;
@@ -236,6 +237,9 @@ a{
   color:white;
   text-align: center;
 }
+.outer-wrapper .col1 #col1-1{
+  width: 600px;
+}
 .col2-1{
   margin-left: auto;
   margin-right: auto;
@@ -322,8 +326,7 @@ textarea{
 #car {
   width: 256px;
   height: 144px;
-  margin-top: 200px;
-  margin-left: 10%;
+  margin-top: 100px;
   background: url('images/Sprite1_truck.png') left center;
   animation: play 1.5s steps(10) infinite;
 }
@@ -403,7 +406,7 @@ footer a {
 /*nav*/
 
 nav ul {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Carter One';
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -419,8 +422,12 @@ nav ul li {
   font-weight: bold;
   font-size: 1em;
   border-radius: 50px;
-  background-color: rgba(157, 184, 182, 0.5);
   padding: 10px;
+  background-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 50px;
+  border-color: white;
   text-decoration: none;
   color: white;
   display: inline-block;
@@ -463,97 +470,6 @@ nav ul li a {
   100% {
     transform: rotate(1800deg);
   }
-}
-
-/*flip*/
-.col1 #col1-1 ul{
-  cursor: pointer;
-  list-style: none;
-  box-shadow:3px 3px 2px rgba(0,0,0,5);
-  position:relative;
-  justify-content: center;
-  width:300px;
-  height:300px;
-  perspective:300px;
-  margin-left: 30%; 
-  margin-top: 20%;
-  perspective-origin:top center;
-  transform-style:preserve-3d;
-  animation-name: tracking-in-expand;
-  animation-duration: 2s;
-}
-.col1 #col1-1 ul li{
-  font-family: 'Quicksand', sans-serif;
-  font-size: 2em;
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background:#FFF4D3;
-  color:#F78733;
-  padding:0.5em;box-sizing:border-box;
-  transform:rotateX(0);
-  transform-origin:center bottom;
-  transition:transform 0.3s, height 0.1s;
-  transform-style:preserve-3d;
-}
-
-.col1 #col1-1 ul li.flipped {
-  transform:rotateX(-180deg);
-  backface-visibility:hidden;
-}
-
-.col1 #col1-1 ul.has-flippage {
-  height:300px;
-}
-.col1 #col1-1 ul.has-flippage li {
-  height:100%;
-}
-
-/*backface*/
-.col1 #col1-1 ul li::after {
-  font-size: .8em;
-  text-align: center;
-  content:"Click to flip back";
-  width:100%;
-  height:100%;
-  display:block;
-  background:#E7E7C1; 
-  color:white;
-  position:absolute;
-  top:0;
-  left:0;
-  transform-origin:center center;
-  transform:rotateX(180deg);
-  box-shadow:0 2px 4px -3px rgba(0,0,0,0.2);
-  backface-visibility:hidden;
-}
-
-.col1 #col1-1 ul li:nth-of-type(even) { 
-  border-top:medium solid #DFDCE3; 
-}
-.col1 #col1-1 ul li:nth-of-type(odd) { 
-  border-top:medium solid rgb(233, 198, 42); 
-}
-
-@keyframes unflip-notice {
-  0% {
-    transform:rotateX(0);
-  }
-  50% {
-    transform:rotateX(-20deg);
-  }
-  100% {
-    transform:rotateX(0)
-  }
-}
-
-#click1{
-  font-family: 'Quicksand', sans-serif;
-  color: white;
-  font-size: 1em;
-  margin-left: 65%;
 }
 /*button*/
 #nextBtn{
@@ -600,12 +516,16 @@ nav ul li a {
   display: inline-block;
   cursor: pointer;
   font-size: 1.5em;
-  color: white;
+  color: yellowgreen;
   font-family: 'Carter One';
   margin-left: 5%;
   margin-top: 2%;
-  background-color: yellowgreen;
+  background-color: transparent;
+  border-style: solid;
   border-radius: 50px;
+  border-width: 2px;
+  border-color: yellowgreen;
+  padding: 10px;
 }
 
 .popup .popuptext {
@@ -643,4 +563,166 @@ nav ul li a {
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity:1 ;}
+}
+
+.box_list{
+  margin:0 10%;
+  height: 630px;
+  overflow: hidden;
+  padding: 10px 0 40px 60px
+}
+
+.box_list ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  transition: all 0.5s linear;
+  top:0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.box_list ul:last-of-type{
+  top:80px;
+}
+
+.box_list ul:before{
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  border:1px dashed #fff;
+  position: absolute;
+  top:0;
+  left:30px
+}
+
+.box_list ul li{
+  margin: 20px 60px 60px;
+  position: relative;
+  padding: 10px 20px;
+  background:rgba(255, 255, 255, 0.2);
+  color:#fff;
+  border-radius: 10px;
+  line-height: 20px;
+  width: 150px;
+}
+.box_list ul li > span{
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  border:1px solid #fff;
+  position: absolute;
+  top:0;
+  left:-30px;
+  font-size: 1em;
+}
+
+.box_listul li > span:before,.box_list ul li > span:after{
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background:brown;
+  border:2px solid #fff;
+  position: absolute;
+  left:-7.5px
+}
+
+.box_list ul li > span:before{top:-10px}
+.box_list ul li > span:after{top:95%}
+
+.bbox_list .title{
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 5px
+}
+
+.box_list .info:first-letter{text-transform: capitalize;line-height: 1.7}
+
+.box_list .name{
+  margin-top: 10px;
+  text-transform: capitalize;
+  font-style: italic;
+  text-align: right;
+  margin-right: 20px
+}
+
+
+.box_list .time span{
+  position: absolute;
+  left: -100px;
+  color:#fff;
+  font-size:80%;
+  font-weight: bold;
+}
+.box_list .time span:first-child{top:-16px}
+.box_list .time span:last-child{top:94%}
+
+
+.arrow{
+  position: absolute;
+  top: 105%;
+  left: 22%;
+  cursor: pointer;
+height:20px;
+width:20px
+}
+
+.arrow:hover{
+  -webkit-animation: arrow 1s linear infinite;
+     -moz-animation: arrow 1s linear infinite;
+       -o-animation: arrow 1s linear infinite;
+          animation: arrow 1s linear infinite;
+}
+
+.box_list ul:last-of-type .arrow{
+  position: absolute;
+  top: 105%;
+  left: 22%;
+  transform: rotateX(180deg);
+  cursor: pointer;
+}
+
+svg{
+  width: 20px;
+  height: 20px
+}
+
+@keyframes arrow{
+  0%,100%{
+      top:105%
+  }
+  50%{
+      top:106%
+  }
+}
+
+@-webkit-keyframes arrow{
+  0%,100%{
+      top:105%
+  }
+  50%{
+      top:106%
+  }
+}
+
+@-moz-keyframes arrow{
+  0%,100%{
+      top:105%
+  }
+  50%{
+      top:106%
+  }
+}
+
+@-o-keyframes arrow{
+  0%,100%{
+      top:105%
+  }
+  50%{
+      top:106%
+  }
 }
