@@ -185,7 +185,7 @@ p{
 .test1{
   font-size: 1.8em;
   margin-left: 180px;
-  margin-top: 200px;
+  margin-top: 50px;
 }
 .test2{
   margin-left: 180px;
@@ -566,9 +566,8 @@ nav ul li a {
 }
 
 .box_list{
-  margin:0 10%;
-  height: 630px;
-  overflow: hidden;
+  margin:0 20%;
+  height: 600px;
   padding: 10px 0 40px 60px
 }
 
@@ -583,7 +582,7 @@ nav ul li a {
 }
 
 .box_list ul:last-of-type{
-  top:80px;
+  top:60px;
 }
 
 .box_list ul:before{
@@ -658,71 +657,19 @@ nav ul li a {
   font-size:80%;
   font-weight: bold;
 }
-.box_list .time span:first-child{top:-16px}
-.box_list .time span:last-child{top:94%}
-
-
-.arrow{
-  position: absolute;
-  top: 105%;
-  left: 22%;
-  cursor: pointer;
-height:20px;
-width:20px
+.box_list .time span:first-child{
+  top:-16px;
 }
-
-.arrow:hover{
-  -webkit-animation: arrow 1s linear infinite;
-     -moz-animation: arrow 1s linear infinite;
-       -o-animation: arrow 1s linear infinite;
-          animation: arrow 1s linear infinite;
+.box_list .time span:last-child{
+  top:94%;
 }
-
-.box_list ul:last-of-type .arrow{
-  position: absolute;
-  top: 105%;
-  left: 22%;
-  transform: rotateX(180deg);
-  cursor: pointer;
-}
-
-svg{
-  width: 20px;
-  height: 20px
-}
-
-@keyframes arrow{
-  0%,100%{
-      top:105%
-  }
-  50%{
-      top:106%
-  }
-}
-
-@-webkit-keyframes arrow{
-  0%,100%{
-      top:105%
-  }
-  50%{
-      top:106%
-  }
-}
-
-@-moz-keyframes arrow{
-  0%,100%{
-      top:105%
-  }
-  50%{
-      top:106%
-  }
-}
-
-@-o-keyframes arrow{
-  0%,100%{
-      top:105%
-  }
-  50%{
-      top:106%
-  }
+#page1_title{
+  margin-top: 100px;
+  margin-left: 100px;
+  color: white;
+  font-size: 2.5em;
+  font-family: 'Carter One';
+  animation-name: text-pop-up-top;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
