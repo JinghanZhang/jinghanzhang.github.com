@@ -183,13 +183,13 @@ p{
   font-family: 'Quicksand', sans-serif;
 }
 .test1{
-  font-size: 1.8em;
-  margin-left: 180px;
+  font-size: 1.5em;
+  margin-left: 90px;
   margin-top: 50px;
 }
 .test2{
-  margin-left: 180px;
-  font-size: 1.5em;
+  margin-left: 90px;
+  font-size: 1.2em;
 }
 a{
   text-decoration: none;
@@ -326,8 +326,8 @@ textarea{
 #car {
   width: 256px;
   height: 144px;
-  margin-top: 100px;
-  background: url('images/Sprite1_truck.png') left center;
+  margin-top: 460px;
+  background: url('images/Sprite_truck.png') left center;
   animation: play 1.5s steps(10) infinite;
 }
 @keyframes play1 {
@@ -472,7 +472,7 @@ nav ul li a {
   }
 }
 /*button*/
-#nextBtn{
+#nextBtn, #nextBtn1{
   color: white;
   margin-top: 300px;
   margin-right: 5%;
@@ -480,9 +480,14 @@ nav ul li a {
   font-family: 'Carter One';
   background-color: transparent;
   border-style: solid;
-  border-radius: 50px;
+  border-radius: 50%;
   border-color: white;
   border-width: 5px;
+  height: 120px;
+  width: 120px;
+}
+#nextBtn1{
+  border-radius: 0;
 }
 /*img display*/
 #imagecontainer {
