@@ -168,7 +168,6 @@ p{
   flex-direction: row;
 }
 .col3 {
-  margin: auto;
   display: flex;
   flex-direction: row;
 }
