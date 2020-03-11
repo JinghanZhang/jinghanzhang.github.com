@@ -1,3 +1,5 @@
+"use strict";
+
 function start() {
 
   var home = document.getElementsByClassName("home");
