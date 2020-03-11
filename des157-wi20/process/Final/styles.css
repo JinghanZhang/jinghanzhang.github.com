@@ -1,7 +1,33 @@
-  body {
+@media only screen and (max-width: 1200px) {
+  body{
+    background-color: #6AB8B5;
+  }
+  .home{
+    display: none;
+  }
+  .media{
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Carter One';
+    padding-top: 100px;
+  }
+  footer{
+    display: none;
+  }
+  .outer-wrapper, .outer-wrapper2, .outer-wrapper3, nav{
+    display: none;
+  }
+}
+@media only screen and (min-width: 1200px) {
+ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+}
+.media{
+  display: none;
 }
 .home{
   margin: auto;
@@ -61,22 +87,6 @@ p{
   100% {
       opacity: 1;
  }
-}
-#explore{
-  margin-left: auto;
-  margin-right: auto;
-  width: 100px;
-  padding: 10px;
-  background-color: #3EACBC;
-  border-radius: 50px;
-  border-style: solid;
-  color: white;
-  text-align: center;
-  font-size: 1.5em;
-  font-family: 'Carter One';
-  cursor: pointer;
-  animation-name: tracking-in-expand;
-  animation-duration: 2.5s;
 }
 #textt{
   color: #ffab3b;
@@ -265,8 +275,8 @@ textarea{
 }
 
 #text1-2{
-  padding-top: 15%;
-  padding-left: 10%;
+  padding-top: 13%;
+  padding-left: 5%;
   font-size: 1.2em;
 }
 #text1-3{
@@ -275,11 +285,19 @@ textarea{
   padding-top: 15%;
   text-align: justify;
 }
+#text1-4{
+  color: white;
+  font-size: 1.6em;
+  margin-top: 200px;
+  margin-left: 15%;
+  padding-top: 3%;
+  width: 700px;
+}
 #text2-1{
   width: 50%;
   font-size: 1.6em;
   margin-left: 10%;
-  margin-top: 10%;
+  margin-top: 5%;
   color:#FF3B3F;
   background-color: rgba(202, 235, 242, 0.2);
   padding: 10px;
@@ -298,12 +316,6 @@ textarea{
   color:#FF3B3F;
   background-color: rgba(202, 235, 242, 0.2);
   padding: 10px;
-}
-#text1-4{
-  color: white;
-  font-size: 2em;
-  margin-top: 200px;
-  margin-left: 15%;
 }
 .outer-wrapper2 #col1-2{
   display: flex;
@@ -406,6 +418,7 @@ footer a {
 /*nav*/
 
 nav ul {
+  cursor: pointer;
   font-family: 'Carter One';
   position: -webkit-sticky;
   position: sticky;
@@ -471,24 +484,7 @@ nav ul li a {
     transform: rotate(1800deg);
   }
 }
-/*button*/
-#nextBtn, #nextBtn1{
-  color: white;
-  margin-top: 300px;
-  margin-right: 5%;
-  font-size: 2em;
-  font-family: 'Carter One';
-  background-color: transparent;
-  border-style: solid;
-  border-radius: 50%;
-  border-color: white;
-  border-width: 5px;
-  height: 120px;
-  width: 120px;
-}
-#nextBtn1{
-  border-radius: 0;
-}
+
 /*img display*/
 #imagecontainer {
   cursor: pointer;
@@ -571,7 +567,7 @@ nav ul li a {
 }
 
 .box_list{
-  margin:0 20%;
+  margin:0 30%;
   height: 600px;
   padding: 10px 0 40px 60px
 }
@@ -605,7 +601,7 @@ nav ul li a {
   margin: 20px 60px 60px;
   position: relative;
   padding: 10px 20px;
-  background:rgba(255, 255, 255, 0.2);
+  background:rgba(88, 88, 88, 0.5);
   color:#fff;
   border-radius: 10px;
   line-height: 20px;
@@ -629,7 +625,7 @@ nav ul li a {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background:brown;
+  background:#585858;
   border:2px solid #fff;
   position: absolute;
   left:-7.5px
@@ -654,7 +650,6 @@ nav ul li a {
   margin-right: 20px
 }
 
-
 .box_list .time span{
   position: absolute;
   left: -100px;
@@ -672,9 +667,225 @@ nav ul li a {
   margin-top: 100px;
   margin-left: 100px;
   color: white;
+  font-size: 2em;
+  font-family: 'Carter One';
+}
+#page2_title{
+  margin-top: 80px;
+  margin-left: 100px;
+  color: white;
+  text-shadow: 3px 2px #FF3B3F;
   font-size: 2.5em;
   font-family: 'Carter One';
-  animation-name: text-pop-up-top;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
+}
+
+/*list animation*/
+@keyframes bounce {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+ }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+ }
+}
+* {
+  box-sizing: border-box;
+}
+
+.effect {
+  list-style: none;
+  padding: 1em 0 0 1em;
+  margin-top: 200px;
+  margin-left: 3%;
+  clear: both;
+}
+.effect li {
+  position: relative;
+  width: 75%;
+  line-height: 2em;
+  text-align: center;
+  float: left;
+  margin: 0 4px 4px 0;
+  padding: 0 8px;
+  background: rgba(26, 82, 118, 0.8);
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  list-style: none;
+}
+.effect li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 4px 0 0 0;
+}
+.effect li ul li {
+  width: 100%;
+  opacity: 0;
+  float: none;
+  font-size: 0.8em;
+  line-height: 1.8em;
+}
+.effect li:hover {
+  background: rgba(46, 134, 193, 0.75);
+}
+.effect li:hover ul {
+  display: block;
+}
+.effect li:hover ul li:nth-child(1) {
+  animation-delay: 0.04s;
+}
+.effect li:hover ul li:nth-child(2) {
+  animation-delay: 0.08s;
+}
+.effect li:hover ul li:nth-child(3) {
+  animation-delay: 0.12s;
+}
+.effect li:hover ul li:nth-child(4) {
+  animation-delay: 0.16s;
+}
+.effect li:hover ul li:nth-child(5) {
+  animation-delay: 0.2s;
+}
+.effect li:hover ul li:nth-child(6) {
+  animation-delay: 0.24s;
+}
+.effect li:hover ul li:nth-child(7) {
+  animation-delay: 0.28s;
+}
+.effect li:hover ul li:nth-child(8) {
+  animation-delay: 0.32s;
+}
+.effect li:hover ul li:nth-child(9) {
+  animation-delay: 0.36s;
+}
+.effect li:hover ul li:nth-child(10) {
+  animation-delay: 0.4s;
+}
+.effect li.drop:hover li {
+  animation: drop 0.4s forwards;
+}
+.effect li.swing:hover li {
+  animation: swing 1.4s forwards;
+}
+.effect li.bounce:hover li {
+  animation: bounce 0.5s cubic-bezier(0, 1, 0.5, 2) forwards;
+}
+
+.horizontal-arrow {
+  position: fixed;
+  width: 40px;
+  right: 800px;
+  top: 15%;
+  padding: 0;
+  margin-left: -60px;
+  content: "\f087";
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -1px;
+  color: white;
+  border-radius: 4px;
+  border-left: 20px solid white;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  animation: indicate 2s linear infinite;
+}
+.horizontal-arrow:before {
+  width: 150px;
+  opacity: 1;
+  display: block;
+  position: absolute;
+  text-align: left;
+  color:white;
+  font-size: 1.2em;
+  font-family: 'Carter One';
+  content: "Scroll Over";
+  padding: 0;
+  top: -10px;
+  right: 0;
+}
+@keyframes indicate {
+  0% {
+    right: 80%;
+ }
+  100% {
+    right: 75%;
+    opacity: 0;
+ }
+}
+
+/*animated buttun*/
+.btn {
+  border-radius: 4px;
+  font-family: 'Carter One';
+  border: 4px solid white;
+  color: white;
+  display: inline-block;
+  margin: 0 0.25em;
+  overflow: hidden;
+  padding: 24px 60px 24px 16px;
+  position: relative;
+  text-decoration: none;
+  line-height: 1;
+  cursor: pointer;
+  animation-name: tracking-in-expand;
+  animation-duration: 2s;
+}
+.btn .btn-content {
+  font-size: 1.5em;
+  line-height: 1.2;
+  padding: 0 26px;
+  position: relative;
+  right: 0;
+  transition: right 300ms ease;
+  display: block;
+  text-align: left;
+}
+.btn .icon {
+  border-left: 1px solid white;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 50%;
+  transition: all 300ms ease;
+  transform: translateY(-50%);
+  width: 58px;
+  height: 70%;
+}
+.btn .icon i {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.btn:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+.btn:hover .btn-content {
+  right: 100%;
+}
+.btn:hover .icon {
+  border-left: 0;
+  font-size: 1.8em;
+  width: 100%;
+}
+.btn:hover:after {
+  opacity: 0.2;
+}
+.page_position{
+  position: fixed;
+  top: 40%;
+  right: 100px;
+}
+
+
 }
