@@ -51,7 +51,7 @@
 	h1, h2, h4, #title, form p, nav ul, .popup, #page1_title, #page2_title, .horizontal-arrow:before, .btn, .popup1, #spin_text {
 		font-family: 'Carter One';
 	}
-	h3, p, .test1, .test2, #text, .list, textarea, footer a, #imagecontainer, .box_list ul, .effect li, .popuptext1 {
+	h3, p, .test1, .test2, #text, .list, textarea, footer a, #imagecontainer, .box_list ul, .effect li, .popuptext1, .col2 ul {
 		font-family: 'Quicksand', sans-serif;
 	}
 	h3, h4{
@@ -307,6 +307,25 @@
 		color: white;
 		width: 500px;
 	}
+	.col1-2 h4{
+		font-size: 1.3em;
+		position: fixed;
+		margin-top: 4%;
+		margin-left: .5%;
+	}
+	.col2 h4{
+		margin-top: 10%;
+		font-size: 2.3em;
+	}
+	.col2 ul{
+		width: 350px;
+		font-size: 1em;
+		margin-top: 14%;
+		color: white;
+		list-style: none;
+		text-align: justify;
+		margin-right: 8%;
+	}
 	/*sprite animation*/
 	@keyframes play {
 		100% {
@@ -473,6 +492,7 @@
 		border-color: yellowgreen;
 		border-style: solid;
 		border-radius: 50%;
+		margin-left: 20%;
 	}
 	#imagecontainer p {
 		text-align: justify;
