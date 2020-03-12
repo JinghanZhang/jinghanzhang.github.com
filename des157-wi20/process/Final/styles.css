@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-height: 600px){
   body{
     background-color: #6AB8B5;
   }
@@ -20,7 +20,29 @@
     display: none;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 1200px){
+  body{
+    background-color: #6AB8B5;
+  }
+  .home{
+    display: none;
+  }
+  .media{
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Carter One';
+    padding-top: 100px;
+  }
+  footer{
+    display: none;
+  }
+  .outer-wrapper, .outer-wrapper2, .outer-wrapper3, nav{
+    display: none;
+  }
+}
+@media (min-height: 600px) and (min-width: 1200px) {
  body {
   margin: 0;
   padding: 0;
