@@ -49,35 +49,6 @@ function drop(ev) {
     }
 }
 
-/*flip*/
-const flippeds = []
-const lis = Array.from(document.querySelectorAll("li"));
-let at = lis.length;
-document.querySelector("ul").addEventListener("click", e => {
-
-    const el = e.target;
-    if (el.classList.contains("unflipable")) {
-        el.style.animation = "none";
-        el.offsetWidth;
-        el.style.animation = "unflip-notice 0.1s";
-        return;
-    }
-    if (el.classList.contains("flipped") ||
-        el === e.currentTarget /*fix for chrome*/ ) {
-        lis[at].classList.remove("flipped");
-        at += 1;
-        if (at == lis.length) {
-            e.currentTarget.classList.remove("has-flippage");
-        }
-    } else {
-        if (at == lis.length) {
-            e.currentTarget.classList.add("has-flippage");
-        }
-        at -= 1;
-        lis[at].classList.add("flipped");
-    }
-})
-
 function next() {
 
     var page2 = document.getElementsByClassName("outer-wrapper2");
@@ -140,9 +111,6 @@ function popupfunction() {
     var popup = document.getElementById("myPopup");
     popup.classList.toggle("show");
 }
-
-
-
 
 /*cover animation*/
 
