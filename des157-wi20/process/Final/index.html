@@ -12,7 +12,7 @@
       <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
    </head>
    <body onload="init();">
-      <div class = "home">
+      <section class = "home">
          <h2>Sustainable<br>Packaging</h2>
          <h3>For better natural environment</h3>
          <div id="animation_container">
@@ -23,7 +23,7 @@
          <span class="btn-content">Explore</span>
          <span class="icon"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
          </a>
-      </div>
+      </section>
       <section class = "media">
          <h3>View in full screen</h3>
       </section>
@@ -33,7 +33,7 @@
             <div class = "slide one">
                <div class = "container">
                   <div class = "col1">
-                     <div class = "col1-1">
+                     <section class = "col1-1">
                         <h3 id = "page1_title">Cardboard & Paper Packaging</h3>
                         <p class = "test1">
                            About 165 billion packages are shipped in the 
@@ -43,7 +43,7 @@
                            the cardboard used roughly equating to more than 1 billion trees and 140 billion gallons of water.
                         </p>
                         <div class="horizontal-arrow"></div>
-                     </div>
+                     </section>
                      <div class = "col1-2">
                         <div class="box_list">
                            <ul id="first-list">
@@ -71,9 +71,8 @@
                                     <span>1<sup>st</sup></span>
                                  </div>
                               </li>
-                              <div class="arrow" id="btn1">
-                              </div>
                            </ul>
+                           <div class="arrow" id="btn1"></div>
                         </div>
                      </div>
                   </div>
@@ -151,8 +150,7 @@
                   <div class = "col3">
                      <div class="bottle"></div>
                      <p id = "text2-3">More than 8 million tons of plastic is dumped into our oceans every year,
-                        and straws comprise just 0.025 percent of that.
-                     </p>
+                        and straws comprise just 0.025 percent of that.</p>
                   </div>
                </div>
             </div>
@@ -164,12 +162,12 @@
                <div class = "container">
                   <div class = "col1">
                      <section class = "col1-1">
-                        <div id = "one">
+                        <section id = "one">
                            <h1 id = "title">Sustainable Packaging</h1>
                            <p id = "text"> reduces the environmental impact and ecological footprint</p>
                            <div class = "fourboxes"></div>
                            <div id = "forest" style = "display:none;"></div>
-                        </div>
+                        </section>
                      </section>
                      <div class = "col1-2">
                         <ul class = "list" id = "drag1" draggable = "true" ondragstart = "drag(event)">
@@ -252,7 +250,6 @@
              if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
          }
          function handleComplete(evt,comp) {
-             //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
              var lib=comp.getLibrary();
              var ss=comp.getSpriteSheet();
              var queue = evt.target;
