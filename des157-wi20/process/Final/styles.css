@@ -1,9 +1,6 @@
-@media only screen and (max-height: 600px) {
+@media only screen and (max-height: 600px), only screen and (max-width: 1200px) {
 	body {
 		background-color: #6AB8B5;
-	}
-	.home {
-		display: none;
 	}
 	.media {
 		color: white;
@@ -13,34 +10,7 @@
 		font-family: 'Carter One';
 		padding-top: 100px;
 	}
-	footer {
-		display: none;
-	}
-	.outer-wrapper, .outer-wrapper2, .outer-wrapper3,
-	nav {
-		display: none;
-	}
-}
-
-@media only screen and (max-width: 1200px) {
-	body {
-		background-color: #6AB8B5;
-	}
-	.home {
-		display: none;
-	}
-	.media {
-		color: white;
-		display: block;
-		text-align: center;
-		font-size: 2em;
-		font-family: 'Carter One';
-		padding-top: 100px;
-	}
-	footer {
-		display: none;
-	}
-	.outer-wrapper, .outer-wrapper2, .outer-wrapper3, nav {
+	.home, footer, .outer-wrapper, .outer-wrapper2, .outer-wrapper3, nav {
 		display: none;
 	}
 }
@@ -61,34 +31,59 @@
 		text-align: center;
 		background-color: rgba(161, 200, 206, 0.8);
 	}
+	/*home image*/
+	#animation_container {
+		background-color: transparent;
+		position: fixed;
+		right: 0;
+		top: 0;
+	}
+	#canvas {
+		position: absolute;
+		display: block;
+		background-color: transparent;
+	}
+	#dom_overlay_container {
+		overflow: hidden;
+		position: absolute;
+	}
+	/*text*/
+	h1, h2, h4, #title, form p, nav ul, .popup, #page1_title, #page2_title, .horizontal-arrow:before, .btn {
+		font-family: 'Carter One';
+	}
+	h3, p, .test1, .test2, #text, .list, textarea, footer a, #imagecontainer, .box_list ul, .effect li {
+		font-family: 'Quicksand', sans-serif;
+	}
+	h3, h4{
+		font-size: 1.7em;
+	}
+	h1, h2{
+		text-align: center;
+	}
+	h4, p{
+		text-align: justify;
+	}
 	h1 {
 		color: #ffab3b;
-		text-align: center;
 		font-size: 4em;
-		font-family: 'Carter One';
 	}
 	h2 {
 		color: #046775;
-		text-align: center;
 		font-size: 3.5em;
-		font-family: 'Carter One';
-		position: fixed;
 		top: 12%;
-		left: 12%;
 	}
 	h3 {
-		font-family: 'Quicksand', sans-serif;
-		font-size: 1.7em;
 		color: white;
 	}
-	p {
-		font-family: 'Quicksand', sans-serif;
-		text-align: justify;
+	h4{
+		color: yellowgreen;
 	}
 	.home h3 {
 		font-size: 1.3em;
-		position: fixed;
 		top: 33%;
+	}
+	h2, .home h3{
+		position: fixed;
 		left: 12%;
 	}
 	/*animation*/
@@ -184,7 +179,6 @@
 	}
 	.test1, .test2 {
 		color: white;
-		font-family: 'Quicksand', sans-serif;
 	}
 	.test1, .test2{
 		margin-left: 90px;
@@ -206,7 +200,6 @@
 		margin-top: 100px;
 		color: white;
 		font-size: 3em;
-		font-family: 'Carter One';
 		animation-name: text-pop-up-top;
 		animation-duration: 5s;
 		animation-iteration-count: infinite;
@@ -214,7 +207,6 @@
 	#text {
 		color: white;
 		font-size: 1.8em;
-		font-family: 'Quicksand', sans-serif;
 		text-align: center;
 	}
 	.list {
@@ -223,7 +215,6 @@
 		height: 250px;
 		font-size: 1.5em;
 		color: yellowgreen;
-		font-family: 'Quicksand', sans-serif;
 		margin-left: 10%;
 	}
 	.list li {
@@ -241,7 +232,7 @@
 		color: white;
 		text-align: center;
 	}
-	.outer-wrapper .col1 #col1-1 {
+	.outer-wrapper .col1 .col1-1 {
 		width: 600px;
 	}
 	.col2-1 {
@@ -255,14 +246,12 @@
 		margin-left: auto;
 	}
 	form p {
-		font-family: 'Carter One';
 		font-size: 1.5em;
 		color: yellowgreen;
 	}
 	textarea {
 		background-color: transparent;
 		border: solid yellowgreen;
-		font-family: 'Quicksand';
 		color: white;
 		padding: 10px 24px;
 		font-size: 0.8em;
@@ -287,36 +276,30 @@
 		padding-top: 3%;
 		width: 700px;
 	}
+	#text2-1, #text2-2, #text2-3{
+		color: #FF3B3F;
+		background-color: rgba(202, 235, 242, 0.2);
+		padding: 10px;
+	}
 	#text2-1 {
 		width: 50%;
 		font-size: 1.6em;
 		margin-left: 10%;
 		margin-top: 5%;
-		color: #FF3B3F;
-		background-color: rgba(202, 235, 242, 0.2);
-		padding: 10px;
 	}
 	#text2-2 {
 		width: 60%;
 		font-size: 1.3em;
 		margin-top: 15%;
-		color: #FF3B3F;
-		background-color: rgba(202, 235, 242, 0.2);
-		padding: 10px;
 	}
 	#text2-3 {
 		font-size: 1.3em;
 		margin-top: 15%;
-		color: #FF3B3F;
-		background-color: rgba(202, 235, 242, 0.2);
-		padding: 10px;
 		height: 50px;
 	}
-	.outer-wrapper3 #col1-2 {
+	.outer-wrapper3 .col1-2 {
 		display: flex;
 		flex-direction: row;
-	}
-	.outer-wrapper3 #col1-2 {
 		margin-top: 10%;
 	}
 	#col3-1 {
@@ -390,13 +373,10 @@
 		position: sticky;
 		position: -webkit-sticky;
 	}
-	.button a {
+	.button a, footer a{
 		text-decoration: none;
-		color: white;
 	}
 	footer a {
-		text-decoration: none;
-		font-family: 'Quicksand', sans-serif;
 		font-size: 20px;
 		text-align: center;
 	}
@@ -409,7 +389,6 @@
 		color: white;
 		padding: 1em;
 		background-color: #6AB8B5;
-		text-align: center;
 		position: fixed;
 	}
 	footer:hover {
@@ -424,7 +403,6 @@
 	/*nav*/
 	nav ul {
 		cursor: pointer;
-		font-family: 'Carter One';
 		position: -webkit-sticky;
 		position: sticky;
 		top: 0;
@@ -471,9 +449,9 @@
 		box-sizing: border-box;
 		border: 60px solid #25B6B5;
 		border-color: #25B6B5 transparent #25B6B5 transparent;
-		animation: lds-hourglass 1s infinite;
+		animation: spin 1s infinite;
 	}
-	@keyframes lds-hourglass {
+	@keyframes spin {
 		0% {
 			transform: rotate(0);
 			animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
@@ -490,7 +468,6 @@
 	#imagecontainer {
 		cursor: pointer;
 		color: white;
-		font-family: 'Quicksand', sans-serif;
 		margin-top: 100px;
 		width: 275px;
 		height: 275px;
@@ -516,7 +493,6 @@
 		cursor: pointer;
 		font-size: 1.5em;
 		color: yellowgreen;
-		font-family: 'Carter One';
 		margin-left: 5%;
 		margin-top: 2%;
 		background-color: transparent;
@@ -579,7 +555,6 @@
 		position: relative;
 		transition: all 0.5s linear;
 		top: 0;
-		font-family: 'Quicksand', sans-serif;
 	}
 	.box_list ul:last-of-type {
 		top: 60px;
@@ -653,7 +628,6 @@
 		margin-left: 100px;
 		color: white;
 		font-size: 2em;
-		font-family: 'Carter One';
 	}
 	#page2_title {
 		margin-top: 80px;
@@ -661,7 +635,6 @@
 		color: white;
 		text-shadow: 3px 2px #FF3B3F;
 		font-size: 2.5em;
-		font-family: 'Carter One';
 	}
 	/*list animation*/
 	@keyframes bounce {
@@ -694,7 +667,6 @@
 		padding: 0 8px;
 		background: rgba(26, 82, 118, 0.8);
 		color: white;
-		font-family: 'Quicksand', sans-serif;
 		list-style: none;
 	}
 	.effect li ul {
@@ -778,7 +750,6 @@
 		text-align: left;
 		color: white;
 		font-size: 1.2em;
-		font-family: 'Carter One';
 		content: "Scroll Over";
 		padding: 0;
 		top: -10px;
@@ -801,7 +772,6 @@
 	}
 	.btn {
 		border-radius: 4px;
-		font-family: 'Carter One';
 		border: 4px solid white;
 		color: white;
 		display: inline-block;
@@ -867,22 +837,5 @@
 		position: fixed;
 		top: 40%;
 		right: 100px;
-	}
-	/*home image*/
-	#animation_container {
-		background-color: transparent;
-		position: fixed;
-		right: 0;
-		top: 0;
-	}
-	#canvas {
-		position: absolute;
-		display: block;
-		background-color: transparent;
-	}
-	#dom_overlay_container {
-		pointer-events: none;
-		overflow: hidden;
-		position: absolute;
 	}
 }
