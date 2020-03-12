@@ -111,6 +111,10 @@ function popupfunction() {
     var popup = document.getElementById("myPopup");
     popup.classList.toggle("show");
 }
+function popupfunction1() {
+    var popup = document.getElementById("myPopup1");
+    popup.classList.toggle("show");
+}
 
 /*cover animation*/
 

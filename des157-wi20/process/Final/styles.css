@@ -48,10 +48,10 @@
 		position: absolute;
 	}
 	/*text*/
-	h1, h2, h4, #title, form p, nav ul, .popup, #page1_title, #page2_title, .horizontal-arrow:before, .btn {
+	h1, h2, h4, #title, form p, nav ul, .popup, #page1_title, #page2_title, .horizontal-arrow:before, .btn, .popup1 {
 		font-family: 'Carter One';
 	}
-	h3, p, .test1, .test2, #text, .list, textarea, footer a, #imagecontainer, .box_list ul, .effect li {
+	h3, p, .test1, .test2, #text, .list, textarea, footer a, #imagecontainer, .box_list ul, .effect li, .popuptext1 {
 		font-family: 'Quicksand', sans-serif;
 	}
 	h3, h4{
@@ -483,10 +483,12 @@
 		position: absolute;
 	}
 	/*popup*/
-	.popup {
+	.popup, .popup1 {
 		position: relative;
 		display: inline-block;
 		cursor: pointer;
+	}
+	.popup {
 		font-size: 1.5em;
 		color: yellowgreen;
 		margin-left: 5%;
@@ -498,10 +500,16 @@
 		border-color: yellowgreen;
 		padding: 10px;
 	}
-	.popup .popuptext {
+	.popup1 {
+		font-size: 1.4em;
+		color: white;
+		margin-left: 5%;
+		margin-top: 35%;
+		padding: 10px;
+		width: 300px;
+	}
+	.popup .popuptext, .popup1 .popuptext1{
 		visibility: hidden;
-		width: 160px;
-		background-color: green;
 		color: #fff;
 		text-align: center;
 		border-radius: 6px;
@@ -509,15 +517,25 @@
 		position: absolute;
 		z-index: 1;
 		bottom: 125%;
-		left: 50%;
 		margin-left: -80px;
 	}
-	.popup .popuptext::after {
+	.popup .popuptext {
+		width: 160px;
+		background-color: green;
+		left: 50%;
+	}
+	.popup1 .popuptext1 {
+		width: 400px;
+		background-color: #1B8EA5;
+		text-align: center;
+		left: 0;
+	}
+	.popup .popuptext::after, .popup1 .popuptext1::after {
 		content: "";
 		position: absolute;
 		top: 100%;
 	}
-	.popup .show {
+	.popup .show, .popup1 .show  {
 		visibility: visible;
 		-webkit-animation: fadeIn 1s;
 		animation: fadeIn 1s
