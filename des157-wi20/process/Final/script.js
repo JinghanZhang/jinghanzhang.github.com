@@ -97,7 +97,7 @@ function next2() {
     }
 }
 
-/*img*/
+// img
 document.getElementById("imagecontainer").onclick = function() {
     var num = Math.floor(Math.random() * 4) + 1;
     console.log(num);
@@ -106,7 +106,7 @@ document.getElementById("imagecontainer").onclick = function() {
     document.getElementById("img").style.marginTop = (event.clientY - 100) + "px";
 }
 
-/*popup*/
+// popup
 function popupfunction() {
     var popup = document.getElementById("myPopup");
     popup.classList.toggle("show");
@@ -116,7 +116,7 @@ function popupfunction1() {
     popup.classList.toggle("show");
 }
 
-/*cover animation*/
+// cover animation
 
 (function(cjs, an) {
 

@@ -1,4 +1,4 @@
-@media only screen and (max-height: 600px), only screen and (max-width: 1200px) {
+@media only screen and (max-height: 600px), only screen and (max-width: 1250px) {
 	body {
 		background-color: #6AB8B5;
 	}
@@ -15,7 +15,7 @@
 	}
 }
 
-@media (min-height: 600px) and (min-width: 1200px) {
+@media (min-height: 600px) and (min-width: 1250px) {
 	body {
 		margin: 0;
 		padding: 0;
@@ -48,7 +48,7 @@
 		position: absolute;
 	}
 	/*text*/
-	h1, h2, h4, #title, form p, nav ul, .popup, #page1_title, #page2_title, .horizontal-arrow:before, .btn, .popup1 {
+	h1, h2, h4, #title, form p, nav ul, .popup, #page1_title, #page2_title, .horizontal-arrow:before, .btn, .popup1, #spin_text {
 		font-family: 'Carter One';
 	}
 	h3, p, .test1, .test2, #text, .list, textarea, footer a, #imagecontainer, .box_list ul, .effect li, .popuptext1 {
@@ -174,6 +174,7 @@
 		text-align: center;
 	}
 	.test1, .test2 {
+		padding: 10px;
 		color: white;
 	}
 	.test1, .test2{
@@ -263,6 +264,8 @@
 		width: 400px;
 		font-size: 1.3em;
 		text-align: justify;
+		padding: 20px;
+		background-color: rgba(206, 206, 206, 0.8);
 	}
 	#text1-4 {
 		color: white;
@@ -504,9 +507,8 @@
 		font-size: 1.4em;
 		color: white;
 		margin-left: 5%;
-		margin-top: 35%;
-		padding: 10px;
-		width: 300px;
+		margin-top: 30%;
+		width: 400px;
 	}
 	.popup .popuptext, .popup1 .popuptext1{
 		visibility: hidden;
