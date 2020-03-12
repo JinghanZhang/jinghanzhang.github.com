@@ -150,13 +150,15 @@
                   <div class = "col3">
                      <div class="bottle"></div>
                      <p id = "text2-3">More than 8 million tons of plastic is dumped into our oceans every year,
-                        and straws comprise just 0.025 percent of that.</p>
+                        and straws comprise just 0.025 percent of that.
+                     </p>
                      <p class = "popup1" onclick="popupfunction1()">
                         <img src="images/arrow.png" alt="arrow" height="57" width="44">Plastic Marine Debris!!
                         <span class = "popuptext1" id = "myPopup1">Plastic marine debris is any
-                            plastic material that inadvertently makes its way out to sea, and
-                             none of it belongs there. Marine litter means any human-created 
-                             waste that has been discharged into the coastal or marine environment.</span></p>
+                        plastic material that inadvertently makes its way out to sea, and
+                        none of it belongs there. Marine litter means any human-created 
+                        waste that has been discharged into the coastal or marine environment.</span>
+                     </p>
                   </div>
                </div>
             </div>
@@ -174,7 +176,7 @@
                            <div class = "fourboxes"></div>
                            <div id = "forest" style = "display:none;"></div>
                         </section>
-                    </div>
+                     </div>
                      <section class = "col1-2">
                         <ul class = "list" id = "drag1" draggable = "true" ondragstart = "drag(event)">
                            <li>Package Design</li>
@@ -186,17 +188,17 @@
                            <p id = "here">Drop List Here</p>
                         </div>
                         <h4>Improve the packaging quality through ...</h4>
-                    </section>
+                     </section>
                   </div>
                   <section class = "col2" >
-                      <h4>What<br>should<br>we<br>do?</h4>
-                      <ul>
-                          <li>Use less packaging</li>
-                          <li>Stop using plastic</li>
-                          <li>Reuse & Recycle</li>
-                          <li>...</li>
-                      </ul>
-                      <img src="images/boxxx.png" alt="box" height="300" width="300" style="position:fixed; top: 40%; right: 15%">
+                     <h4>What<br>should<br>we<br>do?</h4>
+                     <ul>
+                        <li>Use less packaging</li>
+                        <li>Stop using plastic</li>
+                        <li>Reuse & Recycle</li>
+                        <li>...</li>
+                     </ul>
+                     <img src="images/boxxx.png" alt="box" height="300" width="300" style="position:fixed; top: 40%; right: 15%">
                      <section class = "col2-1">
                         <form>
                            <h4>Share Your Ideas!</h4>
@@ -207,7 +209,7 @@
                         </form>
                         <div class = "box"></div>
                      </section>
-                    </section>
+                  </section>
                   <div class = "col3">
                      <div id="imagecontainer">
                         <p>Click anywhere inside to discover different packaging</p>
@@ -243,48 +245,47 @@
             / <a href="https://validator.w3.org/check?uri=referer">Valid HTML</a> / <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
          </p>
       </footer>
-      
       <script src="script.js"></script>
       <script src="https://use.fontawesome.com/3ed82de92b.js"></script>
       <script>
-          //animate
+         //animate
          var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
          function init() {
-             canvas = document.getElementById("canvas");
-             anim_container = document.getElementById("animation_container");
-             dom_overlay_container = document.getElementById("dom_overlay_container");
-             var comp=AdobeAn.getComposition("BD018AD2DE264906925B3B737CE908AA");
-             var lib=comp.getLibrary();
-             var loader = new createjs.LoadQueue(false);
-             loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
-             loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
-             var lib=comp.getLibrary();
-             loader.loadManifest(lib.properties.manifest);
+            canvas = document.getElementById("canvas");
+            anim_container = document.getElementById("animation_container");
+            dom_overlay_container = document.getElementById("dom_overlay_container");
+            var comp=AdobeAn.getComposition("BD018AD2DE264906925B3B737CE908AA");
+            var lib=comp.getLibrary();
+            var loader = new createjs.LoadQueue(false);
+            loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+            loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+            var lib=comp.getLibrary();
+            loader.loadManifest(lib.properties.manifest);
          }
          function handleFileLoad(evt, comp) {
-             var images=comp.getImages();	
-             if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+            var images=comp.getImages();	
+            if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
          }
          function handleComplete(evt,comp) {
-             var lib=comp.getLibrary();
-             var ss=comp.getSpriteSheet();
-             var queue = evt.target;
-             var ssMetadata = lib.ssMetadata;
-             for(i=0; i<ssMetadata.length; i++) {
-                 ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
-             }
-             exportRoot = new lib.COVER();
-             stage = new lib.Stage(canvas);	
-             //Registers the "tick" event listener.
-             fnStartAnimation = function() {
-                 stage.addChild(exportRoot);
-                 createjs.Ticker.framerate = lib.properties.fps;
-                 createjs.Ticker.addEventListener("tick", stage);
-             }	    
-             //Code to support hidpi screens and responsive scaling.
-             AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
-             AdobeAn.compositionLoaded(lib.properties.id);
-             fnStartAnimation();
+            var lib=comp.getLibrary();
+            var ss=comp.getSpriteSheet();
+            var queue = evt.target;
+            var ssMetadata = lib.ssMetadata;
+            for(i=0; i<ssMetadata.length; i++) {
+                ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+            }
+            exportRoot = new lib.COVER();
+            stage = new lib.Stage(canvas);	
+            //Registers the "tick" event listener.
+            fnStartAnimation = function() {
+                stage.addChild(exportRoot);
+                createjs.Ticker.framerate = lib.properties.fps;
+                createjs.Ticker.addEventListener("tick", stage);
+            }	    
+            //Code to support hidpi screens and responsive scaling.
+            AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
+            AdobeAn.compositionLoaded(lib.properties.id);
+            fnStartAnimation();
          }
       </script>
    </body>
