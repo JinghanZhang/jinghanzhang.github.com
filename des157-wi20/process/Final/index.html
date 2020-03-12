@@ -9,19 +9,23 @@
       <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Carter+One&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Quicksand:500&display=swap" rel="stylesheet">
+      <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
    </head>
-   <body>
+   <body onload="init();">
       <div class = "home">
-         <h2>Sustainable Packaging</h2>
-         <section onclick="start();">
-            <a href="#" class="btn">
+         <h2>Sustainable<br>Packaging</h2>
+         <h3>For better natural environment</h3>
+         <div id="animation_container">
+            <canvas id="canvas" width="512" height="384"></canvas>
+            <div id="dom_overlay_container"></div>
+         </div>
+            <a href="#" id = "homebtn" onclick="start();" class="btn">
                <span class="btn-content">Explore</span>
                <span class="icon"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
             </a>
-         </section>
       </div>
       <section class = "media">
-         <h3>View with a larger screen</h3>
+         <h3>View in full screen</h3>
       </section>
       <div class="circle" style = "display: none;"></div>
       <div class = "outer-wrapper" style = "display: none;">
@@ -223,5 +227,46 @@
       
       <script src="script.js"></script>
       <script src="https://use.fontawesome.com/3ed82de92b.js"></script>
+      <script>
+         var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+         function init() {
+             canvas = document.getElementById("canvas");
+             anim_container = document.getElementById("animation_container");
+             dom_overlay_container = document.getElementById("dom_overlay_container");
+             var comp=AdobeAn.getComposition("BD018AD2DE264906925B3B737CE908AA");
+             var lib=comp.getLibrary();
+             var loader = new createjs.LoadQueue(false);
+             loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+             loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+             var lib=comp.getLibrary();
+             loader.loadManifest(lib.properties.manifest);
+         }
+         function handleFileLoad(evt, comp) {
+             var images=comp.getImages();	
+             if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+         }
+         function handleComplete(evt,comp) {
+             //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+             var lib=comp.getLibrary();
+             var ss=comp.getSpriteSheet();
+             var queue = evt.target;
+             var ssMetadata = lib.ssMetadata;
+             for(i=0; i<ssMetadata.length; i++) {
+                 ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+             }
+             exportRoot = new lib.COVER();
+             stage = new lib.Stage(canvas);	
+             //Registers the "tick" event listener.
+             fnStartAnimation = function() {
+                 stage.addChild(exportRoot);
+                 createjs.Ticker.framerate = lib.properties.fps;
+                 createjs.Ticker.addEventListener("tick", stage);
+             }	    
+             //Code to support hidpi screens and responsive scaling.
+             AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
+             AdobeAn.compositionLoaded(lib.properties.id);
+             fnStartAnimation();
+         }
+         </script>
    </body>
 </html>

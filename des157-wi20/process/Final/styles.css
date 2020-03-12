@@ -65,21 +65,28 @@ h1{
   font-family: 'Carter One';
 }
 h2{
-  padding-top: 20%;
   color: #046775;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 3.5em;
   font-family: 'Carter One';
+  position: fixed;
+  top: 12%;
+  left: 15%;
 }
 h3{
   font-family: 'Quicksand', sans-serif;
   font-size: 1.7em;
   color: white;
-
 }
 p{
   font-family: 'Quicksand', sans-serif;
   text-align: justify;
+}
+.home h3{
+  font-size: 1.3em;
+  position: fixed;
+  top: 33%;
+  left: 15%;
 }
 /*animation*/
 .tracking-in-expand {
@@ -827,6 +834,11 @@ nav ul li a {
 }
 
 /*animated buttun*/
+#homebtn{
+  position: fixed;
+  top: 45%;
+  left: 17%;
+}
 .btn {
   border-radius: 4px;
   font-family: 'Carter One';
@@ -895,6 +907,26 @@ nav ul li a {
   position: fixed;
   top: 40%;
   right: 100px;
+}
+
+/*home image*/
+#animation_container{
+  background-color:transparent;
+   position: fixed;
+   right: 0;
+   top: 0;
+}
+#canvas{
+  position: absolute; 
+  display: block; 
+  background-color:transparent;
+}
+#dom_overlay_container{
+  pointer-events:none; 
+  overflow:hidden; 
+  width:1024px; 
+  height:768px; 
+  position: absolute; 
 }
 
 
