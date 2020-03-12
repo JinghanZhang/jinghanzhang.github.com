@@ -1,9 +1,9 @@
-@media only screen and (max-height: 600px) {
+@media only screen and (max-height:600px) {
 	body {
-		background-color: #6AB8B5;
+		background-color: #6AB8B5
 	}
 	.home {
-		display: none;
+		display: none
 	}
 	.media {
 		color: white;
@@ -11,25 +11,25 @@
 		text-align: center;
 		font-size: 2em;
 		font-family: 'Carter One';
-		padding-top: 100px;
+		padding-top: 100px
 	}
 	footer {
-		display: none;
+		display: none
 	}
 	.outer-wrapper,
 	.outer-wrapper2,
 	.outer-wrapper3,
 	nav {
-		display: none;
+		display: none
 	}
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width:1200px) {
 	body {
-		background-color: #6AB8B5;
+		background-color: #6AB8B5
 	}
 	.home {
-		display: none;
+		display: none
 	}
 	.media {
 		color: white;
@@ -37,40 +37,40 @@
 		text-align: center;
 		font-size: 2em;
 		font-family: 'Carter One';
-		padding-top: 100px;
+		padding-top: 100px
 	}
 	footer {
-		display: none;
+		display: none
 	}
 	.outer-wrapper,
 	.outer-wrapper2,
 	.outer-wrapper3,
 	nav {
-		display: none;
+		display: none
 	}
 }
 
-@media (min-height: 600px) and (min-width: 1200px) {
+@media (min-height:600px) and (min-width:1200px) {
 	body {
 		margin: 0;
 		padding: 0;
-		overflow: hidden;
+		overflow: hidden
 	}
 	.media {
-		display: none;
+		display: none
 	}
 	.home {
 		margin-top: 5%;
 		width: 90%;
 		height: 600px;
 		text-align: center;
-		background-color: rgba(161, 200, 206, 0.8);
+		background-color: rgba(161, 200, 206, .8)
 	}
 	h1 {
 		color: #ffab3b;
 		text-align: center;
 		font-size: 4em;
-		font-family: 'Carter One';
+		font-family: 'Carter One'
 	}
 	h2 {
 		color: #046775;
@@ -79,90 +79,88 @@
 		font-family: 'Carter One';
 		position: fixed;
 		top: 12%;
-		left: 12%;
+		left: 12%
 	}
 	h3 {
 		font-family: 'Quicksand', sans-serif;
 		font-size: 1.7em;
-		color: white;
+		color: white
 	}
 	p {
 		font-family: 'Quicksand', sans-serif;
-		text-align: justify;
+		text-align: justify
 	}
 	.home h3 {
 		font-size: 1.3em;
 		position: fixed;
 		top: 33%;
-		left: 12%;
+		left: 12%
 	}
-	/*animation*/
 	.tracking-in-expand {
-		-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-		animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+		-webkit-animation: tracking-in-expand 0.7s cubic-bezier(.215, .61, .355, 1) both;
+		animation: tracking-in-expand 0.7s cubic-bezier(.215, .61, .355, 1) both
 	}
 	@-webkit-keyframes tracking-in-expand {
 		0% {
-			letter-spacing: -0.5em;
-			opacity: 0;
+			letter-spacing: -.5em;
+			opacity: 0
 		}
 		40% {
-			opacity: 0.6;
+			opacity: .6
 		}
 		100% {
-			opacity: 1;
+			opacity: 1
 		}
 	}
 	@keyframes tracking-in-expand {
 		0% {
-			letter-spacing: -0.5em;
-			opacity: 0;
+			letter-spacing: -.5em;
+			opacity: 0
 		}
 		40% {
-			opacity: 0.6;
+			opacity: .6
 		}
 		100% {
-			opacity: 1;
+			opacity: 1
 		}
 	}
 	#textt {
 		color: #ffab3b;
 		text-align: center;
 		font-size: 1.7em;
-		font-family: 'Carter One';
+		font-family: 'Carter One'
 	}
 	.home img {
-		width: 50%;
+		width: 50%
 	}
-	/*horizontal scrolling*/
 	.slide {
 		width: 100vw;
-		height: 100vh;
+		height: 100vh
 	}
 	.wrapper {
 		display: flex;
 		flex-direction: row;
 		width: 400vw;
 		transform: rotate(90deg) translateY(-100vh);
-		transform-origin: top left;
+		transform-origin: top left
 	}
 	.one {
-		background: url("images/factory.png");
+		background: url(images/factory.png);
 		background-size: auto 100vh;
 		background-repeat: repeat-x;
-		width: 400vw;
+		width: 400vw
 	}
 	.two {
-		background: url("images/ocean.png");
+		background: url(images/ocean.png);
 		background-size: auto 100vh;
 		background-repeat: repeat-x;
-		width: 400vw;
+		width: 400vw
 	}
 	.three {
-		background: url("images/tree1.png");
+		background: url(images/tree1.png);
 		background-size: auto 100vh;
 		background-repeat: repeat-x;
-		width: 400vw;
+		width: 400vw
 	}
 	.outer-wrapper,
 	.outer-wrapper2,
@@ -175,58 +173,58 @@
 		overflow-x: hidden;
 		position: absolute;
 		-ms-overflow-style: none;
-		background-color: #AB987A;
+		background-color: #AB987A
 	}
 	.outer-wrapper2 {
-		background-color: white;
+		background-color: white
 	}
 	.outer-wrapper3 {
-		background-color: #015249;
+		background-color: #015249
 	}
 	::-webkit-scrollbar {
-		display: none;
+		display: none
 	}
 	.container {
 		margin: 10px auto;
-		width: 100%;
+		width: 100%
 	}
 	.container>div {
-		width: 33%;
+		width: 33%
 	}
 	.col1 {
 		float: left;
 		display: flex;
-		flex-direction: row;
+		flex-direction: row
 	}
 	.col2 {
 		float: right;
 		text-align: center;
 		display: flex;
-		flex-direction: row;
+		flex-direction: row
 	}
 	.col3 {
 		display: flex;
-		flex-direction: row;
+		flex-direction: row
 	}
 	.test1,
 	.test2 {
 		color: white;
-		font-family: 'Quicksand', sans-serif;
+		font-family: 'Quicksand', sans-serif
 	}
 	.test1 {
 		font-size: 1.5em;
 		margin-left: 90px;
-		margin-top: 50px;
+		margin-top: 50px
 	}
 	.test2 {
 		margin-left: 90px;
-		font-size: 1.2em;
+		font-size: 1.2em
 	}
 	a {
-		text-decoration: none;
+		text-decoration: none
 	}
 	#one {
-		margin-left: 20%;
+		margin-left: 20%
 	}
 	#title {
 		margin-top: 100px;
@@ -235,13 +233,13 @@
 		font-family: 'Carter One';
 		animation-name: text-pop-up-top;
 		animation-duration: 5s;
-		animation-iteration-count: infinite;
+		animation-iteration-count: infinite
 	}
 	#text {
 		color: white;
 		font-size: 1.8em;
 		font-family: 'Quicksand', sans-serif;
-		text-align: center;
+		text-align: center
 	}
 	.list {
 		border-radius: 50px;
@@ -250,10 +248,10 @@
 		font-size: 1.5em;
 		color: yellowgreen;
 		font-family: 'Quicksand', sans-serif;
-		margin-left: 10%;
+		margin-left: 10%
 	}
 	.list li {
-		margin: 2%;
+		margin: 2%
 	}
 	#drag {
 		width: 400px;
@@ -261,29 +259,29 @@
 		border: 3px solid yellowgreen;
 		border-radius: 50px;
 		margin-left: 5%;
-		position: sticky;
+		position: sticky
 	}
 	#here {
 		color: white;
-		text-align: center;
+		text-align: center
 	}
 	.outer-wrapper .col1 #col1-1 {
-		width: 600px;
+		width: 600px
 	}
 	.col2-1 {
 		margin-left: auto;
 		margin-right: auto;
 		display: flex;
-		flex-direction: row;
+		flex-direction: row
 	}
 	form {
 		margin-top: 100px;
-		margin-left: auto;
+		margin-left: auto
 	}
 	form p {
 		font-family: 'Carter One';
 		font-size: 1.5em;
-		color: yellowgreen;
+		color: yellowgreen
 	}
 	textarea {
 		background-color: transparent;
@@ -291,19 +289,19 @@
 		font-family: 'Quicksand';
 		color: white;
 		padding: 10px 24px;
-		font-size: 0.8em;
+		font-size: .8em
 	}
 	#text1-2 {
 		padding-top: 13%;
 		padding-left: 5%;
-		font-size: 1.2em;
+		font-size: 1.2em
 	}
 	#text1-3 {
 		position: fixed;
 		top: 220px;
 		width: 400px;
 		font-size: 1.3em;
-		text-align: justify;
+		text-align: justify
 	}
 	#text1-4 {
 		color: white;
@@ -311,7 +309,7 @@
 		margin-top: 200px;
 		margin-left: 15%;
 		padding-top: 3%;
-		width: 700px;
+		width: 700px
 	}
 	#text2-1 {
 		width: 50%;
@@ -319,113 +317,111 @@
 		margin-left: 10%;
 		margin-top: 5%;
 		color: #FF3B3F;
-		background-color: rgba(202, 235, 242, 0.2);
-		padding: 10px;
+		background-color: rgba(202, 235, 242, .2);
+		padding: 10px
 	}
 	#text2-2 {
 		width: 60%;
 		font-size: 1.3em;
 		margin-top: 15%;
 		color: #FF3B3F;
-		background-color: rgba(202, 235, 242, 0.2);
-		padding: 10px;
+		background-color: rgba(202, 235, 242, .2);
+		padding: 10px
 	}
 	#text2-3 {
 		font-size: 1.3em;
 		margin-top: 15%;
 		color: #FF3B3F;
-		background-color: rgba(202, 235, 242, 0.2);
+		background-color: rgba(202, 235, 242, .2);
 		padding: 10px;
-		height: 50px;
+		height: 50px
 	}
 	.outer-wrapper2 #col1-2,
 	.outer-wrapper3 #col1-2 {
 		display: flex;
-		flex-direction: row;
+		flex-direction: row
 	}
 	.outer-wrapper3 #col1-2 {
-		margin-top: 10%;
+		margin-top: 10%
 	}
 	#col3-1 {
 		margin-top: 100px;
 		margin-left: 15%;
 		color: white;
-		width: 500px;
+		width: 500px
 	}
-	/*sprite animation*/
 	@keyframes play {
 		100% {
-			background-position: -2560px;
+			background-position: -2560px
 		}
 	}
 	#car {
 		width: 256px;
 		height: 144px;
 		margin-top: 460px;
-		background: url('images/Sprite_truck.png') left center;
-		animation: play 1.5s steps(10) infinite;
+		background: url(images/Sprite_truck.png) left center;
+		animation: play 1.5s steps(10) infinite
 	}
 	@keyframes play1 {
 		100% {
-			background-position: -1200px;
+			background-position: -1200px
 		}
 	}
 	.box {
 		margin-top: 100px;
 		width: 240px;
 		height: 240px;
-		background: url('images/Sprite2_box.png') left center;
-		animation: play1 1.5s steps(5) infinite;
+		background: url(images/Sprite2_box.png) left center;
+		animation: play1 1.5s steps(5) infinite
 	}
 	@keyframes play2 {
 		100% {
-			background-position: -2560px;
+			background-position: -2560px
 		}
 	}
 	.fourboxes {
 		margin-left: 0;
 		width: 640px;
 		height: 240px;
-		background: url('images/Sprite3_box.png') left center;
-		animation: play2 3s steps(4) infinite;
+		background: url(images/Sprite3_box.png) left center;
+		animation: play2 3s steps(4) infinite
 	}
 	#forest {
 		margin-left: 8%;
 		width: 640px;
 		height: 240px;
-		background: url('images/Sprite4_forest.png') left center;
-		animation: play2 3s steps(4) infinite;
+		background: url(images/Sprite4_forest.png) left center;
+		animation: play2 3s steps(4) infinite
 	}
 	@keyframes play3 {
 		100% {
-			background-position: -1500px;
+			background-position: -1500px
 		}
 	}
 	.bottle {
 		margin-top: 100px;
 		width: 150px;
 		height: 500px;
-		background: url('images/Sprite_bottle.png') left center;
-		animation: play3 1.5s steps(10) infinite;
+		background: url(images/Sprite_bottle.png) left center;
+		animation: play3 1.5s steps(10) infinite
 	}
-	/*footer*/
 	.button {
 		margin-left: 75%;
 		margin-right: 5%;
 		font-size: 12px;
 		text-align: center;
 		position: sticky;
-		position: -webkit-sticky;
+		position: -webkit-sticky
 	}
 	.button a {
 		text-decoration: none;
-		color: white;
+		color: white
 	}
 	footer a {
 		text-decoration: none;
 		font-family: 'Quicksand', sans-serif;
 		font-size: 20px;
-		text-align: center;
+		text-align: center
 	}
 	footer {
 		left: 0;
@@ -437,18 +433,17 @@
 		padding: 1em;
 		background-color: #6AB8B5;
 		text-align: center;
-		position: fixed;
+		position: fixed
 	}
 	footer:hover {
-		height: 100px;
+		height: 100px
 	}
 	footer p {
-		text-align: center;
+		text-align: center
 	}
 	footer a {
-		color: white;
+		color: white
 	}
-	/*nav*/
 	nav ul {
 		cursor: pointer;
 		font-family: 'Carter One';
@@ -458,12 +453,12 @@
 		list-style-type: none;
 		margin: 0;
 		float: right;
-		padding: 1em 0 0 0;
+		padding: 1em 0 0 0
 	}
 	nav ul li {
 		display: inline;
 		margin: 10px;
-		font-weight: bold;
+		font-weight: 700;
 		font-size: 1em;
 		border-radius: 50px;
 		padding: 10px;
@@ -474,13 +469,12 @@
 		border-color: white;
 		text-decoration: none;
 		color: white;
-		display: inline-block;
+		display: inline-block
 	}
 	nav ul li a {
 		display: inline-block;
-		color: white;
+		color: white
 	}
-	/*loading*/
 	.circle {
 		display: block;
 		margin-left: auto;
@@ -488,7 +482,7 @@
 		width: 80px;
 		height: 80px;
 		margin-top: 200px;
-		position: sticky;
+		position: sticky
 	}
 	.circle:after {
 		content: " ";
@@ -498,22 +492,21 @@
 		box-sizing: border-box;
 		border: 60px solid #25B6B5;
 		border-color: #25B6B5 transparent #25B6B5 transparent;
-		animation: lds-hourglass 1s infinite;
+		animation: lds-hourglass 1s infinite
 	}
 	@keyframes lds-hourglass {
 		0% {
 			transform: rotate(0);
-			animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+			animation-timing-function: cubic-bezier(.55, .055, .675, .19)
 		}
 		50% {
 			transform: rotate(900deg);
-			animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+			animation-timing-function: cubic-bezier(.215, .61, .355, 1)
 		}
 		100% {
-			transform: rotate(1800deg);
+			transform: rotate(1800deg)
 		}
 	}
-	/*img display*/
 	#imagecontainer {
 		cursor: pointer;
 		color: white;
@@ -523,20 +516,19 @@
 		height: 275px;
 		border-color: yellowgreen;
 		border-style: solid;
-		border-radius: 50%;
+		border-radius: 50%
 	}
 	#imagecontainer p {
 		text-align: justify;
 		margin-left: 5%;
 		margin-right: 5%;
-		margin-top: 40%;
+		margin-top: 40%
 	}
 	#img {
 		width: 200px;
 		height: 200px;
-		position: absolute;
+		position: absolute
 	}
-	/*popup*/
 	.popup {
 		position: relative;
 		display: inline-block;
@@ -551,7 +543,7 @@
 		border-radius: 50px;
 		border-width: 2px;
 		border-color: yellowgreen;
-		padding: 10px;
+		padding: 10px
 	}
 	.popup .popuptext {
 		visibility: hidden;
@@ -565,12 +557,12 @@
 		z-index: 1;
 		bottom: 125%;
 		left: 50%;
-		margin-left: -80px;
+		margin-left: -80px
 	}
 	.popup .popuptext::after {
 		content: "";
 		position: absolute;
-		top: 100%;
+		top: 100%
 	}
 	.popup .show {
 		visibility: visible;
@@ -579,18 +571,18 @@
 	}
 	@-webkit-keyframes fadeIn {
 		from {
-			opacity: 0;
+			opacity: 0
 		}
 		to {
-			opacity: 1;
+			opacity: 1
 		}
 	}
 	@keyframes fadeIn {
 		from {
-			opacity: 0;
+			opacity: 0
 		}
 		to {
-			opacity: 1;
+			opacity: 1
 		}
 	}
 	.box_list {
@@ -605,10 +597,10 @@
 		position: relative;
 		transition: all 0.5s linear;
 		top: 0;
-		font-family: 'Quicksand', sans-serif;
+		font-family: 'Quicksand', sans-serif
 	}
 	.box_list ul:last-of-type {
-		top: 60px;
+		top: 60px
 	}
 	.box_list ul:before {
 		content: "";
@@ -624,11 +616,11 @@
 		margin: 20px 60px 60px;
 		position: relative;
 		padding: 10px 20px;
-		background: rgba(88, 88, 88, 0.5);
+		background: rgba(88, 88, 88, .5);
 		color: #fff;
 		border-radius: 10px;
 		line-height: 20px;
-		width: 150px;
+		width: 150px
 	}
 	.box_list ul li>span {
 		content: "";
@@ -639,7 +631,7 @@
 		position: absolute;
 		top: 0;
 		left: -30px;
-		font-size: 1em;
+		font-size: 1em
 	}
 	.box_listul li>span:before,
 	.box_list ul li>span:after {
@@ -664,27 +656,27 @@
 		line-height: 1.7
 	}
 	.box_list .subtitle {
-		font-size: 1.8em;
+		font-size: 1.8em
 	}
 	.box_list .subtitle span {
 		position: absolute;
 		left: -100px;
 		color: #fff;
 		font-size: 80%;
-		font-weight: bold;
+		font-weight: 700
 	}
 	.box_list .subtitle span:first-child {
-		top: -16px;
+		top: -16px
 	}
 	.box_list .subtitle span:last-child {
-		top: 94%;
+		top: 94%
 	}
 	#page1_title {
 		margin-top: 100px;
 		margin-left: 100px;
 		color: white;
 		font-size: 2em;
-		font-family: 'Carter One';
+		font-family: 'Carter One'
 	}
 	#page2_title {
 		margin-top: 80px;
@@ -692,28 +684,27 @@
 		color: white;
 		text-shadow: 3px 2px #FF3B3F;
 		font-size: 2.5em;
-		font-family: 'Carter One';
+		font-family: 'Carter One'
 	}
-	/*list animation*/
 	@keyframes bounce {
 		0% {
 			opacity: 0;
-			transform: translateY(50px);
+			transform: translateY(50px)
 		}
 		100% {
 			opacity: 1;
-			transform: translateY(0);
+			transform: translateY(0)
 		}
 	}
 	* {
-		box-sizing: border-box;
+		box-sizing: border-box
 	}
 	.effect {
 		list-style: none;
 		padding: 1em 0 0 1em;
 		margin-top: 200px;
 		margin-left: 3%;
-		clear: both;
+		clear: both
 	}
 	.effect li {
 		position: relative;
@@ -723,10 +714,10 @@
 		float: left;
 		margin: 0 4px 4px 0;
 		padding: 0 8px;
-		background: rgba(26, 82, 118, 0.8);
+		background: rgba(26, 82, 118, .8);
 		color: white;
 		font-family: 'Quicksand', sans-serif;
-		list-style: none;
+		list-style: none
 	}
 	.effect li ul {
 		display: none;
@@ -734,59 +725,59 @@
 		top: 100%;
 		left: 0;
 		width: 100%;
-		padding: 4px 0 0 0;
+		padding: 4px 0 0 0
 	}
 	.effect li ul li {
 		width: 100%;
 		opacity: 0;
 		float: none;
-		font-size: 0.8em;
-		line-height: 1.8em;
+		font-size: .8em;
+		line-height: 1.8em
 	}
 	.effect li:hover {
-		background: rgba(46, 134, 193, 0.75);
+		background: rgba(46, 134, 193, .75)
 	}
 	.effect li:hover ul {
-		display: block;
+		display: block
 	}
 	.effect li:hover ul li:nth-child(1) {
-		animation-delay: 0.04s;
+		animation-delay: 0.04s
 	}
 	.effect li:hover ul li:nth-child(2) {
-		animation-delay: 0.08s;
+		animation-delay: 0.08s
 	}
 	.effect li:hover ul li:nth-child(3) {
-		animation-delay: 0.12s;
+		animation-delay: 0.12s
 	}
 	.effect li:hover ul li:nth-child(4) {
-		animation-delay: 0.16s;
+		animation-delay: 0.16s
 	}
 	.effect li:hover ul li:nth-child(5) {
-		animation-delay: 0.2s;
+		animation-delay: 0.2s
 	}
 	.effect li:hover ul li:nth-child(6) {
-		animation-delay: 0.24s;
+		animation-delay: 0.24s
 	}
 	.effect li:hover ul li:nth-child(7) {
-		animation-delay: 0.28s;
+		animation-delay: 0.28s
 	}
 	.effect li:hover ul li:nth-child(8) {
-		animation-delay: 0.32s;
+		animation-delay: 0.32s
 	}
 	.effect li:hover ul li:nth-child(9) {
-		animation-delay: 0.36s;
+		animation-delay: 0.36s
 	}
 	.effect li:hover ul li:nth-child(10) {
-		animation-delay: 0.4s;
+		animation-delay: 0.4s
 	}
 	.effect li.drop:hover li {
-		animation: drop 0.4s forwards;
+		animation: drop 0.4s forwards
 	}
 	.effect li.swing:hover li {
-		animation: swing 1.4s forwards;
+		animation: swing 1.4s forwards
 	}
 	.effect li.bounce:hover li {
-		animation: bounce 0.5s cubic-bezier(0, 1, 0.5, 2) forwards;
+		animation: bounce 0.5s cubic-bezier(0, 1, .5, 2) forwards
 	}
 	.horizontal-arrow {
 		position: fixed;
@@ -804,7 +795,7 @@
 		border-left: 20px solid white;
 		border-top: 20px solid transparent;
 		border-bottom: 20px solid transparent;
-		animation: indicate 2s linear infinite;
+		animation: indicate 2s linear infinite
 	}
 	.horizontal-arrow:before {
 		width: 150px;
@@ -818,22 +809,21 @@
 		content: "Scroll Over";
 		padding: 0;
 		top: -10px;
-		right: 0;
+		right: 0
 	}
 	@keyframes indicate {
 		0% {
-			right: 80%;
+			right: 80%
 		}
 		100% {
 			right: 75%;
-			opacity: 0;
+			opacity: 0
 		}
 	}
-	/*animated buttun*/
 	#homebtn {
 		position: fixed;
 		top: 45%;
-		left: 14%;
+		left: 14%
 	}
 	.btn {
 		border-radius: 4px;
@@ -841,7 +831,7 @@
 		border: 4px solid white;
 		color: white;
 		display: inline-block;
-		margin: 0 0.25em;
+		margin: 0 .25em;
 		overflow: hidden;
 		padding: 24px 60px 24px 16px;
 		position: relative;
@@ -849,7 +839,7 @@
 		line-height: 1;
 		cursor: pointer;
 		animation-name: tracking-in-expand;
-		animation-duration: 2s;
+		animation-duration: 2s
 	}
 	.btn .btn-content {
 		font-size: 1.5em;
@@ -859,7 +849,7 @@
 		right: 0;
 		transition: right 300ms ease;
 		display: block;
-		text-align: left;
+		text-align: left
 	}
 	.btn .icon {
 		border-left: 1px solid white;
@@ -870,12 +860,12 @@
 		transition: all 300ms ease;
 		transform: translateY(-50%);
 		width: 58px;
-		height: 70%;
+		height: 70%
 	}
 	.btn .icon i {
 		position: relative;
 		top: 50%;
-		transform: translateY(-50%);
+		transform: translateY(-50%)
 	}
 	.btn:after {
 		content: '';
@@ -886,39 +876,38 @@
 		left: 0;
 		opacity: 0;
 		transition: opacity 300ms ease;
-		background-color: white;
+		background-color: white
 	}
 	.btn:hover .btn-content {
-		right: 100%;
+		right: 100%
 	}
 	.btn:hover .icon {
 		border-left: 0;
 		font-size: 1.8em;
-		width: 100%;
+		width: 100%
 	}
 	.btn:hover:after {
-		opacity: 0.2;
+		opacity: .2
 	}
 	.page_position {
 		position: fixed;
 		top: 40%;
-		right: 100px;
+		right: 100px
 	}
-	/*home image*/
 	#animation_container {
 		background-color: transparent;
 		position: fixed;
 		right: 0;
-		top: 0;
+		top: 0
 	}
 	#canvas {
 		position: absolute;
 		display: block;
-		background-color: transparent;
+		background-color: transparent
 	}
 	#dom_overlay_container {
 		pointer-events: none;
 		overflow: hidden;
-		position: absolute;
+		position: absolute
 	}
 }
